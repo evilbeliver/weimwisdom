@@ -1,0 +1,14 @@
+<svg width="1000" height="700" viewBox="0 0 1000 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="700" rx="32" fill="#EAF3ED"/>
+  <rect y="500" width="1000" height="200" fill="#BFD3C0"/>
+  <path d="M90 500L210 220L330 500H90Z" fill="#6C8B74"/>
+  <path d="M250 500L390 150L530 500H250Z" fill="#7DA184"/>
+  <path d="M580 500L700 230L820 500H580Z" fill="#6C8B74"/>
+  <path d="M418 453C472 370 591 347 667 382C745 418 770 489 741 539C713 588 631 611 553 583C491 561 451 515 418 453Z" fill="#9DA7AF"/>
+  <path d="M532 384L587 286L633 369L532 384Z" fill="#87919A"/>
+  <circle cx="641" cy="437" r="10" fill="#263138"/>
+  <path d="M471 539L392 602" stroke="#69747E" stroke-width="24" stroke-linecap="round"/>
+  <path d="M604 556L632 640" stroke="#69747E" stroke-width="24" stroke-linecap="round"/>
+  <path d="M690 534L768 604" stroke="#69747E" stroke-width="24" stroke-linecap="round"/>
+  <text x="70" y="90" fill="#365042" font-family="Arial, sans-serif" font-size="34" font-weight="700">Forest run</text>
+</svg>

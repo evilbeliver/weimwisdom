@@ -2,21 +2,21 @@
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-- [ ] T001 Create Next.js project structure in /src and /public
-- [ ] T002 Initialize project with MUI, Jest, Axe Core, Playwright dependencies
-- [ ] T003 [P] Configure linting, formatting, and code style tools (ESLint, Prettier)
-- [ ] T004 [P] Set up CI/CD pipeline for test and build gates
-- [ ] T005 [P] Configure production build output for Siteground hosting
+- [x] T001 Create Next.js project structure in /src and /public
+- [x] T002 Initialize project with MUI, Jest, Axe Core, Playwright dependencies
+- [x] T003 [P] Configure linting, formatting, and code style tools (ESLint, Prettier)
+- [x] T004 [P] Set up CI/CD pipeline for test and build gates
+- [x] T005 [P] Configure production build output for Siteground hosting
 
 ---
 
 ## Phase 2: Foundational (Blocking Prerequisites)
 
-- [ ] T006 Set up MUI theme customization in src/theme
-- [ ] T007 [P] Implement shared header and footer components in src/components
-- [ ] T008 [P] Configure accessibility testing with Axe Core in tests/accessibility
-- [ ] T009 [P] Set up test folders: unit, integration, accessibility, e2e
-- [ ] T010 [P] Add trusted package update workflow for security
+- [x] T006 Set up MUI theme customization in src/theme
+- [x] T007 [P] Implement shared header and footer components in src/components
+- [x] T008 [P] Configure accessibility testing with Axe Core in tests/accessibility
+- [x] T009 [P] Set up test folders: unit, integration, accessibility, e2e
+- [x] T010 [P] Add trusted package update workflow for security
 
 ---
 
@@ -26,17 +26,17 @@
 **Independent Test**: Can be fully tested by loading home page and accessing breed info
 
 ### Tests for User Story 1
-- [ ] T011 [P] [US1] Write unit tests for header, footer, hero components in tests/unit
-- [ ] T012 [P] [US1] Write accessibility tests for home page in tests/accessibility
-- [ ] T013 [P] [US1] Write integration tests for breed info navigation in tests/integration
-- [ ] T014 [P] [US1] Write end-to-end tests for home page flow in tests/e2e
+- [x] T011 [P] [US1] Write unit tests for header, footer, hero components in tests/unit
+- [x] T012 [P] [US1] Write accessibility tests for home page in tests/accessibility
+- [x] T013 [P] [US1] Write integration tests for breed info navigation in tests/integration
+- [x] T014 [P] [US1] Write end-to-end tests for home page flow in tests/e2e
 
 ### Implementation for User Story 1
-- [ ] T015 [US1] Implement header, footer, hero image components in src/components
-- [ ] T016 [US1] Implement home page layout and breed info section in src/pages
-- [ ] T017 [US1] Add breed info content and images in src/pages and public/images
-- [ ] T018 [US1] Ensure mobile responsiveness and accessibility for home page
-- [ ] T019 [US1] Add fallback handling for missing content/images
+- [x] T015 [US1] Implement header, footer, hero image components in src/components
+- [x] T016 [US1] Implement home page layout and breed info section in src/pages
+- [x] T017 [US1] Add breed info content and images in src/pages and public/images
+- [x] T018 [US1] Ensure mobile responsiveness and accessibility for home page
+- [x] T019 [US1] Add fallback handling for missing content/images
 
 ---
 
@@ -46,16 +46,16 @@
 **Independent Test**: Can be fully tested by accessing training and activities sections
 
 ### Tests for User Story 2
-- [ ] T020 [P] [US2] Write unit tests for training/activity components in tests/unit
-- [ ] T021 [P] [US2] Write accessibility tests for training/activity pages in tests/accessibility
-- [ ] T022 [P] [US2] Write integration tests for training/activity navigation in tests/integration
-- [ ] T023 [P] [US2] Write end-to-end tests for training/activity flows in tests/e2e
+- [x] T020 [P] [US2] Write unit tests for training/activity components in tests/unit
+- [x] T021 [P] [US2] Write accessibility tests for training/activity pages in tests/accessibility
+- [x] T022 [P] [US2] Write integration tests for training/activity navigation in tests/integration
+- [x] T023 [P] [US2] Write end-to-end tests for training/activity flows in tests/e2e
 
 ### Implementation for User Story 2
-- [ ] T024 [US2] Implement training guides and activity/job sections in src/pages
-- [ ] T025 [US2] Add training content, activity/job info, and images in src/pages and public/images
-- [ ] T026 [US2] Ensure mobile responsiveness and accessibility for training/activity pages
-- [ ] T027 [US2] Add fallback handling for missing content/images
+- [x] T024 [US2] Implement training guides and activity/job sections in src/pages
+- [x] T025 [US2] Add training content, activity/job info, and images in src/pages and public/images
+- [x] T026 [US2] Ensure mobile responsiveness and accessibility for training/activity pages
+- [x] T027 [US2] Add fallback handling for missing content/images
 
 ---
 
@@ -65,27 +65,27 @@
 **Independent Test**: Can be fully tested by accessing rescue/adoption sections
 
 ### Tests for User Story 3
-- [ ] T028 [P] [US3] Write unit tests for rescue/adoption components in tests/unit
-- [ ] T029 [P] [US3] Write accessibility tests for rescue/adoption pages in tests/accessibility
-- [ ] T030 [P] [US3] Write integration tests for rescue/adoption navigation in tests/integration
-- [ ] T031 [P] [US3] Write end-to-end tests for rescue/adoption flows in tests/e2e
+- [x] T028 [P] [US3] Write unit tests for rescue/adoption components in tests/unit
+- [x] T029 [P] [US3] Write accessibility tests for rescue/adoption pages in tests/accessibility
+- [x] T030 [P] [US3] Write integration tests for rescue/adoption navigation in tests/integration
+- [x] T031 [P] [US3] Write end-to-end tests for rescue/adoption flows in tests/e2e
 
 ### Implementation for User Story 3
-- [ ] T032 [US3] Implement rescue/adoption info and listings in src/pages
-- [ ] T033 [US3] Add rescue organization info, adoption listings, and images in src/pages and public/images
-- [ ] T034 [US3] Ensure mobile responsiveness and accessibility for rescue/adoption pages
-- [ ] T035 [US3] Add fallback handling for missing content/images
+- [x] T032 [US3] Implement rescue/adoption info and listings in src/pages
+- [x] T033 [US3] Add rescue organization info, adoption listings, and images in src/pages and public/images
+- [x] T034 [US3] Ensure mobile responsiveness and accessibility for rescue/adoption pages
+- [x] T035 [US3] Add fallback handling for missing content/images
 
 ---
 
 ## Final Phase: Polish & Cross-Cutting Concerns
 
-- [ ] T036 [P] Add site-wide accessibility audit and fix issues
+- [x] T036 [P] Add site-wide accessibility audit and fix issues
 - [ ] T037 [P] Optimize site performance (Lighthouse, bundle size, image optimization)
-- [ ] T038 [P] Add site-wide mobile responsiveness checks
+- [x] T038 [P] Add site-wide mobile responsiveness checks
 - [ ] T039 [P] Add site-wide code comments and documentation
 - [ ] T040 [P] Add site-wide test coverage review and improvements
-- [ ] T041 [P] Prepare production build and deployment instructions for Siteground
+- [x] T041 [P] Prepare production build and deployment instructions for Siteground
 
 ---
 
