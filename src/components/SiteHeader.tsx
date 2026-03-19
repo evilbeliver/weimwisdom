@@ -24,13 +24,23 @@ export function SiteHeader() {
     <AppBar position="sticky" color="inherit" elevation={0} sx={{ borderBottom: '1px solid rgba(73, 97, 122, 0.12)' }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters sx={{ minHeight: 76, gap: 2 }}>
-          <Typography component={Link} href="/" variant="h5" sx={{ fontWeight: 900, color: 'primary.dark' }}>
+          <Typography component={Link} href="/" variant="h5" sx={{ fontWeight: 900, color: 'primary.dark', mr: 3 }}>
             WeimWisdom
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
-          <Stack direction="row" spacing={1} sx={{ display: { xs: 'none', md: 'flex' } }}>
+          <Stack direction="row" spacing={0.5} sx={{ display: { xs: 'none', md: 'flex' } }}>
             {navLinks.map((link) => (
-              <Button key={link.href} component={Link} href={link.href} color="inherit">
+              <Button 
+                key={link.href} 
+                component={Link} 
+                href={link.href} 
+                color="inherit"
+                sx={{ 
+                  px: { md: 1, lg: 1.5 },
+                  fontSize: { md: '0.875rem', lg: '0.9375rem' },
+                  whiteSpace: 'nowrap'
+                }}
+              >
                 {link.label}
               </Button>
             ))}
