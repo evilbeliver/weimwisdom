@@ -198,7 +198,7 @@ export const galleryImages: ImageItem[] = [
     caption: 'Athletic movement and endless curiosity on the trail.',
   },
   {
-    src: '/images/nose-work.svg',
+    src: '/images/nose-work.png',
     alt: 'Stylized Weimaraner doing nose work with hidden scent tins',
     caption: 'Nose work turns instinct into focused fun.',
   },

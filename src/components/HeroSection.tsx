@@ -6,7 +6,7 @@ import { galleryImages, heroStats, homeHeroImage } from '@/data/siteContent';
 
 export function HeroSection() {
   const fallbackHero = galleryImages[0];
-  const fallbackSrc = fallbackHero?.src ?? '/images/weim-hero.svg';
+  const fallbackSrc = fallbackHero?.src ?? '/images/weim-hero.png';
   const [heroSrc, setHeroSrc] = useState(homeHeroImage.src);
 
   return (
