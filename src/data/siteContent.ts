@@ -22,6 +22,12 @@ export type RescueListing = {
   contact: string;
 };
 
+export type HeroImage = {
+  src: string;
+  alt: string;
+  caption: string;
+};
+
 export const navLinks: NavLink[] = [
   { label: 'Home', href: '/' },
   { label: 'Breed Info', href: '/breed-info' },
@@ -37,6 +43,12 @@ export const heroStats = [
   { label: 'Trainability', value: 'Excellent' },
   { label: 'Family fit', value: 'Loyal + playful' },
 ];
+
+export const homeHeroImage: HeroImage = {
+  src: '/images/weim-hero.png',
+  alt: 'Weimaraner standing on a mountain ridge during sunset',
+  caption: 'A striking Weimaraner at golden hour in alpine terrain.',
+};
 
 export const homeHighlights: SpotlightCard[] = [
   {

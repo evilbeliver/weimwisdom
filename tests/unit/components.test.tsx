@@ -25,6 +25,6 @@ describe('shared shell components', () => {
 
     expect(screen.getByRole('heading', { name: /sleek, smart, and endlessly devoted/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /explore breed info/i })).toHaveAttribute('href', '/breed-info');
-    expect(screen.getByAltText(/stylized weimaraner portrait/i)).toBeInTheDocument();
+    expect(screen.getByAltText(/weimaraner standing on a mountain ridge during sunset/i)).toBeInTheDocument();
   });
 });
