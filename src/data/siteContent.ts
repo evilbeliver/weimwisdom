@@ -188,7 +188,7 @@ export const galleryImages: ImageItem[] = [
     caption: 'A confident Weimaraner framed by cool dawn colors.',
   },
   {
-    src: '/images/breed-portrait.svg',
+    src: '/images/breed-portrait.png',
     alt: 'Stylized close-up portrait of a silver-gray Weimaraner face',
     caption: 'The iconic silver coat and alert amber expression.',
   },
@@ -208,7 +208,7 @@ export const galleryImages: ImageItem[] = [
     caption: 'Rescue success starts with safety, patience, and trust.',
   },
   {
-    src: '/images/family-dog.svg',
+    src: '/images/family-dog.png',
     alt: 'Stylized Weimaraner relaxing with a family in a bright living room',
     caption: 'A deeply connected family dog after an active day.',
   },
