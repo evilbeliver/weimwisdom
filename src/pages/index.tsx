@@ -1,4 +1,4 @@
-import { Alert, Box, Button, Container, Stack, Typography } from '@mui/material';
+import { Alert, Box, Button, Container, Grid, Stack, Typography } from '@mui/material';
 import Link from 'next/link';
 import { GalleryGrid } from '@/components/GalleryGrid';
 import { HeroSection } from '@/components/HeroSection';
@@ -18,7 +18,7 @@ export default function HomePage() {
         id="breed-overview"
         eyebrow="Core breed info"
         title="What makes Weimaraners unforgettable"
-        description="A polished mix of history, temperament, and care essentials for owners and admirers who want practical guidance with personality."
+        description="The Weimaraner is a striking, high-energy &quot;Gray Ghost&quot; prized for its intense loyalty, intelligence, and need for significant daily activity. Often described as a &quot;Velcro dog&quot; that shadows owners, this versatile breed requires dedicated training and an active lifestyle to thrive."
         hasContent={homeHighlights.length > 0}
         fallback={fallbackMessage}
       >
@@ -44,18 +44,11 @@ export default function HomePage() {
       </SectionBlock>
       <Box sx={{ py: { xs: 7, md: 10 } }}>
         <Container maxWidth="lg">
-          <Box
-            sx={{
-              display: 'grid',
-              gridTemplateColumns: { xs: '1fr', md: 'minmax(0, 2fr) minmax(280px, 1fr)' },
-              gap: 3,
-              alignItems: 'start',
-            }}
-          >
-            <Box>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={8}>
               <Stack spacing={2.5}>
                 <Typography variant="h2">Plan your next visit</Typography>
-                <Typography component="p" color="text.secondary">
+                <Typography color="text.secondary">
                   Jump into detailed breed facts, training guidance, or rescue support depending on where you are in your Weimaraner journey.
                 </Typography>
                 <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
@@ -67,11 +60,11 @@ export default function HomePage() {
                   </Button>
                 </Stack>
               </Stack>
-            </Box>
-            <Box>
+            </Grid>
+            <Grid item xs={12} md={4}>
               <Alert severity="success">Mobile-friendly layouts, accessible navigation, and static export support are built in site-wide.</Alert>
-            </Box>
-          </Box>
+            </Grid>
+          </Grid>
         </Container>
       </Box>
     </SiteLayout>
