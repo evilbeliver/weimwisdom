@@ -183,17 +183,17 @@ export const adoptionListings: SpotlightCard[] = [
 
 export const galleryImages: ImageItem[] = [
   {
-    src: '/images/weim-hero.svg',
-    alt: 'Stylized Weimaraner portrait standing in a mountain sunrise scene',
-    caption: 'A confident Weimaraner framed by cool dawn colors.',
+    src: '/images/weim-eyes.jpg',
+    alt: 'Close-up of Weimaraner puppy with striking blue eyes',
+    caption: 'The striking blue caspien sea eyes before they change',
   },
   {
-    src: '/images/breed-portrait.png',
+    src: '/images/weim-yellow.jpg',
     alt: 'Stylized close-up portrait of a silver-gray Weimaraner face',
     caption: 'The iconic silver coat and alert amber expression.',
   },
   {
-    src: '/images/forest-run.svg',
+    src: '/images/weim-leap.jpg',
     alt: 'Stylized Weimaraner running through a forest trail',
     caption: 'Athletic movement and endless curiosity on the trail.',
   },
@@ -203,7 +203,7 @@ export const galleryImages: ImageItem[] = [
     caption: 'Nose work turns instinct into focused fun.',
   },
   {
-    src: '/images/rescue-companion.svg',
+    src: '/images/weim-trust.jpg',
     alt: 'Stylized rescued Weimaraner sitting beside a volunteer',
     caption: 'Rescue success starts with safety, patience, and trust.',
   },
