@@ -18,7 +18,10 @@ export default function HomePage() {
         id="breed-overview"
         eyebrow="Core breed info"
         title="What makes Weimaraners unforgettable"
-        description="The Weimaraner is a striking, high-energy &quot;Gray Ghost&quot; prized for its intense loyalty, intelligence, and need for significant daily activity. Often described as a &quot;Velcro dog&quot; that shadows owners, this versatile breed requires dedicated training and an active lifestyle to thrive."
+        description={[
+          "With over 25 years of experience living with Weimaraner's, I've learned that these \"Gray Ghosts\" are far more than just pets—they are highly intelligent, \"human-like\" companions with the mental energy and sass of a perpetual toddler. Possessing an uncanny ability to understand their families, Weims thrive on deep bonds but require a strong, caring leader to navigate their unique personalities. They are notorious \"Velcro dogs\" who want to be involved in everything you do, and without proper training, their intense desire to please can quickly manifest as separation anxiety or a series of clever \"Weim Crimes.\"",
+          "Living with a Weimaraner is an acquired taste; they are equivalent to a 3-to-5-year-old child who is constantly learning, challenging boundaries, and prone to the occasional temper tantrum. Because they are elite puzzle solvers—capable of opening everything from refrigerators to 12-packs of beer—they require constant mental and physical stimulation. If they aren't given a job, they will surely \"hire themselves\" for one you won't like, often resulting in the destruction of furniture or siding. While I often find myself talking people out of the breed to ensure a proper match, there is truly nothing more stunning than seeing a Weimaraner in their element. Whether they are hunting or working, their grace and focus make every challenge of the breed entirely worth it."
+        ]}
         hasContent={homeHighlights.length > 0}
         fallback={fallbackMessage}
       >

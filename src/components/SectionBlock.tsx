@@ -5,7 +5,7 @@ type SectionBlockProps = {
   id?: string;
   eyebrow?: string;
   title: string;
-  description: string;
+  description: string | string[];
   fallback?: string;
   hasContent?: boolean;
   children?: ReactNode;
@@ -30,9 +30,19 @@ export function SectionBlock({
             </Typography>
           ) : null}
           <Typography variant="h2">{title}</Typography>
-          <Typography component="p" variant="body1" color="text.secondary" maxWidth={760}>
-            {description}
-          </Typography>
+          {Array.isArray(description) ? (
+            <Stack spacing={2} maxWidth={760}>
+              {description.map((paragraph, index) => (
+                <Typography key={index} component="p" variant="body1" color="text.secondary">
+                  {paragraph}
+                </Typography>
+              ))}
+            </Stack>
+          ) : (
+            <Typography component="p" variant="body1" color="text.secondary" maxWidth={760}>
+              {description}
+            </Typography>
+          )}
         </Stack>
         {hasContent ? children : <Alert severity="info">{fallback}</Alert>}
       </Container>
