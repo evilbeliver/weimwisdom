@@ -198,7 +198,7 @@ export const galleryImages: ImageItem[] = [
     caption: 'Athletic movement and endless curiosity on the trail.',
   },
   {
-    src: '/images/nose-work.png',
+    src: '/images/weim-point.jpg',
     alt: 'Stylized Weimaraner doing nose work with hidden scent tins',
     caption: 'Nose work turns instinct into focused fun.',
   },
@@ -208,9 +208,9 @@ export const galleryImages: ImageItem[] = [
     caption: 'Rescue success starts with safety, patience, and trust.',
   },
   {
-    src: '/images/family-dog.png',
-    alt: 'Stylized Weimaraner relaxing with a family in a bright living room',
-    caption: 'A deeply connected family dog after an active day.',
+    src: '/images/weim-crime.jpg',
+    alt: 'Weimaraner getting into mischief',
+    caption: 'A Weim Crime in the making',
   },
 ];
 
