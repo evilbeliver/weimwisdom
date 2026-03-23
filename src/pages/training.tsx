@@ -3,7 +3,8 @@ import { SectionBlock } from '@/components/SectionBlock';
 import { SiteLayout } from '@/components/SiteLayout';
 import { SpotlightGrid } from '@/components/SpotlightGrid';
 import { fallbackMessage, trainingGuides } from '@/data/siteContent';
-import { Typography } from '@mui/material';
+import { Box, Button, Stack, Typography } from '@mui/material';
+import { YouTube as YouTubeIcon } from '@mui/icons-material';
 
 export default function TrainingPage() {
   return (
@@ -22,12 +23,34 @@ export default function TrainingPage() {
       </SectionBlock>
       <SectionBlock
         title="Training Videos"
-        description=""
+        description="Watch detailed training demonstrations and learn proven techniques for working with Weimaraners."
         hasContent
       >
-        <Typography variant="h5" color="text.secondary" align="center">
-          Coming Soon
-        </Typography>
+        <Box sx={{ textAlign: 'center', py: 4 }}>
+          <Stack spacing={3} alignItems="center">
+            <YouTubeIcon sx={{ fontSize: 64, color: '#FF0000' }} />
+            <Typography variant="h6" gutterBottom>
+              Subscribe to our YouTube channel for exclusive training content
+            </Typography>
+            <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 600 }}>
+              Get access to step-by-step training videos, behavior tips, and expert guidance specifically designed for Weimaraner owners.
+            </Typography>
+            <Button
+              variant="contained"
+              size="large"
+              href="https://www.youtube.com/channel/UCqxGrAMtxPi3zwihJAySn2A?sub_confirmation=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              startIcon={<YouTubeIcon />}
+              sx={{ 
+                bgcolor: '#FF0000',
+                '&:hover': { bgcolor: '#CC0000' }
+              }}
+            >
+              Subscribe & Watch Videos
+            </Button>
+          </Stack>
+        </Box>
       </SectionBlock>
     </SiteLayout>
   );
