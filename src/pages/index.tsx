@@ -59,8 +59,8 @@ export default function HomePage() {
                   <Button component={Link} href="/activities" variant="contained">
                     Browse activities
                   </Button>
-                  <Button component={Link} href="/rescue" variant="outlined">
-                    View rescue resources
+                  <Button component={Link} href="/adoption" variant="outlined">
+                    View available adoptions
                   </Button>
                 </Stack>
               </Stack>

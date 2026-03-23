@@ -33,7 +33,6 @@ export const navLinks: NavLink[] = [
   { label: 'Breed Info', href: '/breed-info' },
   { label: 'Training', href: '/training' },
   { label: 'Activities & Jobs', href: '/activities' },
-  { label: 'Rescue', href: '/rescue' },
   { label: 'Adoption', href: '/adoption' },
 ];
 

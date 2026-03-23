@@ -11,11 +11,11 @@ export default function AdoptionPage() {
       <Script src="https://www.petfinder.com/pet-scroller.bundle.js" strategy="afterInteractive" />
       <PageHero
         title="Adoption stories and readiness guidance"
-        description="Help families find the right match with transparent spotlights, realistic routines, and breed-aware expectations."
+        description="Yes, there is a significant number of Weimaraners in rescue or returned to owners, often due to their high-energy, demanding nature. Rescue organizations across the US frequently operate at capacity, with many of the surrendered dogs being between 8 and 18 months old, as owners become overwhelmed by the 'velociraptor' stage."
       />
       <SectionBlock
         title="Live adoptable Weimaraners"
-        description="These live listings are pulled from participating Weimaraner rescue organizations so visitors can see currently adoptable dogs."
+        description="These live listings are pulled from participating Weimaraner rescue organizations so visitors can see currently adoptable dogs. If no resutls are showing you may have to turn off your VPN if you are using one."
         hasContent
         fallback={fallbackMessage}
       >
