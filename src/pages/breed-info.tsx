@@ -3,7 +3,7 @@ import { PageHero } from '@/components/PageHero';
 import { SectionBlock } from '@/components/SectionBlock';
 import { SiteLayout } from '@/components/SiteLayout';
 import { SpotlightGrid } from '@/components/SpotlightGrid';
-import { breedInfoCare, breedInfoHistory, fallbackMessage, galleryImages } from '@/data/siteContent';
+import { breedInfoCare, breedInfoGallery, breedInfoHistory, fallbackMessage } from '@/data/siteContent';
 
 export default function BreedInfoPage() {
   return (
@@ -41,10 +41,10 @@ export default function BreedInfoPage() {
       <SectionBlock
         title="Breed gallery"
         description="Photo-rich content helps visitors connect with the breed while descriptive alt text keeps the experience accessible."
-        hasContent={galleryImages.length > 0}
+        hasContent={breedInfoGallery.length > 0}
         fallback={fallbackMessage}
       >
-        <GalleryGrid items={galleryImages.slice(0, 3)} />
+        <GalleryGrid items={breedInfoGallery} />
       </SectionBlock>
     </SiteLayout>
   );

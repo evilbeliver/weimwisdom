@@ -268,4 +268,22 @@ export const galleryImages: ImageItem[] = [
   },
 ];
 
+export const breedInfoGallery: ImageItem[] = [
+  {
+    src: '/images/weim-beer.jpg',
+    alt: 'Weimaraner with beer',
+    caption: 'A Weimaraner enjoying the finer things in life',
+  },
+  {
+    src: '/images/weim-soccer.jpg',
+    alt: 'Weimaraner playing with soccer ball',
+    caption: 'Athletic prowess on full display',
+  },
+  {
+    src: '/images/weim-stack.jpg',
+    alt: 'Weimaraner in stacked show position',
+    caption: 'Classic breed conformation and elegance',
+  },
+];
+
 export const fallbackMessage = 'Fresh Weimaraner wisdom is on the way. Check back soon for more photos and guidance.';
