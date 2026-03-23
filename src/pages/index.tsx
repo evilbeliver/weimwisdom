@@ -2,6 +2,7 @@ import { Alert, Box, Button, Container, Grid, Stack, Typography } from '@mui/mat
 import Link from 'next/link';
 import { GalleryGrid } from '@/components/GalleryGrid';
 import { HeroSection } from '@/components/HeroSection';
+import { ResponsiveImage } from '@/components/ResponsiveImage';
 import { SectionBlock } from '@/components/SectionBlock';
 import { SiteLayout } from '@/components/SiteLayout';
 import { SpotlightGrid } from '@/components/SpotlightGrid';
@@ -50,9 +51,9 @@ export default function HomePage() {
           <Grid container spacing={3}>
             <Grid size={{ xs: 12, md: 8 }}>
               <Stack spacing={2.5}>
-                <Typography variant="h2">Plan your next visit</Typography>
+                <Typography variant="h2">Continue at your own Risk</Typography>
                 <Typography color="text.secondary">
-                  Jump into detailed breed facts, training guidance, or rescue support depending on where you are in your Weimaraner journey.
+                  I warned you, turn back now..progressing further will lead you futher down the weim rabbit hole, and you may never look at dogs the same way again. But if you&apos;re ready to embrace the chaos, click through to explore training tips, activities, rescue resources, and more to keep your Weimaraner happy and fulfilled.
                 </Typography>
                 <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
                   <Button component={Link} href="/activities" variant="contained">
@@ -65,7 +66,14 @@ export default function HomePage() {
               </Stack>
             </Grid>
             <Grid size={{ xs: 12, md: 4 }}>
-              <Alert severity="success">Mobile-friendly layouts, accessible navigation, and static export support are built in site-wide.</Alert>
+              <Stack spacing={3}>
+                <ResponsiveImage 
+                  src="/images/weim-beware.jpg" 
+                  alt="Weimaraner warning sign"
+                  caption="Fair warning for the uninitiated"
+                />
+                <Alert severity="success">Mobile-friendly layouts, accessible navigation, and static export support are built in site-wide.</Alert>
+              </Stack>
             </Grid>
           </Grid>
         </Container>
