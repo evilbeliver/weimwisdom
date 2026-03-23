@@ -3,6 +3,7 @@ import { SectionBlock } from '@/components/SectionBlock';
 import { SiteLayout } from '@/components/SiteLayout';
 import { SpotlightGrid } from '@/components/SpotlightGrid';
 import { fallbackMessage, trainingGuides } from '@/data/siteContent';
+import { Typography } from '@mui/material';
 
 export default function TrainingPage() {
   return (
@@ -18,6 +19,15 @@ export default function TrainingPage() {
         fallback={fallbackMessage}
       >
         <SpotlightGrid items={trainingGuides} />
+      </SectionBlock>
+      <SectionBlock
+        title="Training Videos"
+        description=""
+        hasContent
+      >
+        <Typography variant="h5" color="text.secondary" align="center">
+          Coming Soon
+        </Typography>
       </SectionBlock>
     </SiteLayout>
   );
