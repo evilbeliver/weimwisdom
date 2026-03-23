@@ -3,8 +3,30 @@
 
 **Feature Branch**: `001-weimaraner-site`
 **Created**: 2026-03-19
-**Status**: Draft
+**Updated**: 2026-03-23
+**Status**: Active Development
 **Input**: User description: "Sleek and modern Weimaraner website with breed info, training, rescue, activities, jobs, shared header/footer, brilliant hero image, mobile ready, accessible, scalable, lots of pictures, fun info, best standards, maintainable, modeled after https://weimaraner-hub--dcristinzio.replit.app/"
+
+## Recent Enhancements (March 2026)
+
+### Content Expansion
+- **Fun Facts**: Added velvet ears and nooking behavior cards to home page
+- **Breed History**: Added detailed 3-card history section on breed info page
+- **Care Essentials**: Added comprehensive 5-card care guide on breed info page
+- **Activity Ideas**: Expanded to 5 activities including new Barn Hunts card
+- **Job Ideas**: Expanded to 6 purpose-driven roles including SAR, Field Trials, and Detection Work
+
+### Structural Improvements
+- **Page Consolidation**: Combined Activities & Jobs into single comprehensive page
+- **Content Independence**: Separated page-specific content arrays (homeHighlights, breedInfoHistory, breedInfoCare, breedInfoGallery)
+- **Multi-paragraph Support**: Enhanced SectionBlock component to accept string | string[] descriptions
+- **Navigation Update**: Updated site navigation to reflect combined Activities & Jobs page
+
+### Technical Updates
+- **Image Format Migration**: Converted SVG placeholders to PNG/JPG for better performance
+- **Grid v2 Migration**: Updated all components to use MUI Grid v2 size prop
+- **Header Optimization**: Left-justified branding for future logo integration
+- **Build Optimization**: Fixed all 404 errors and improved static export process
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -24,14 +46,15 @@ A visitor lands on the home page, sees a brilliant hero image of a Weimaraner, a
 
 ### User Story 2 - Training & Activities Hub (Priority: P2)
 
-A user can browse training guides, activity suggestions, and job ideas for Weimaraners, with clear navigation and accessible content.
+A user can browse training guides, activity suggestions, and purpose-driven job ideas for Weimaraners, with clear navigation and accessible content. The combined Activities & Jobs page provides comprehensive information about exercise needs and working roles.
 
 **Why this priority**: Supports owners in improving their dog's quality of life and behavior.
 
 **Independent Test**: Can be fully tested by accessing training and activities sections and verifying content.
 
 **Acceptance Scenarios**:
-1. **Given** a user, **When** they select "Training" or "Activities", **Then** relevant guides and suggestions are shown.
+1. **Given** a user, **When** they select "Training" or "Activities & Jobs", **Then** relevant guides and suggestions are shown.
+2. **Given** a user on Activities & Jobs page, **When** they scroll through sections, **Then** they see both exercise activities (5 cards) and purpose-driven work ideas (6 cards).
 
 ---
 

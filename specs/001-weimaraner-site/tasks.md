@@ -81,11 +81,16 @@
 ## Final Phase: Polish & Cross-Cutting Concerns
 
 - [x] T036 [P] Add site-wide accessibility audit and fix issues
-- [ ] T037 [P] Optimize site performance (Lighthouse, bundle size, image optimization)
+- [x] T037 [P] Optimize site performance (Lighthouse, bundle size, image optimization)
 - [x] T038 [P] Add site-wide mobile responsiveness checks
-- [ ] T039 [P] Add site-wide code comments and documentation
-- [ ] T040 [P] Add site-wide test coverage review and improvements
+- [x] T039 [P] Add site-wide code comments and documentation
+- [x] T040 [P] Add site-wide test coverage review and improvements
 - [x] T041 [P] Prepare production build and deployment instructions for Siteground
+- [x] T042 [P] Content enhancements: Add fun facts, breed history, care essentials
+- [x] T043 [P] Page restructuring: Combine Activities & Jobs into single page
+- [x] T044 [P] Content separation: Create independent arrays for each page
+- [x] T045 [P] Activity expansion: Add Barn Hunts card
+- [x] T046 [P] Job expansion: Add SAR, Field Trials, Detection Work cards
 
 ---
 

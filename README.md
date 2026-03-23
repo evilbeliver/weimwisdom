@@ -6,8 +6,7 @@ WeimWisdom is a sleek, accessible, mobile-ready Next.js site for Weimaraner bree
 
 - 🐕 **Comprehensive Breed Information**: Detailed Weimaraner characteristics, temperament, and care essentials
 - 🎓 **Training Resources**: Professional training tips and guidance
-- 🏃 **Activities Guide**: Exercise and activity recommendations for high-energy Weimaraners
-- 💼 **Jobs & Working Roles**: Information about working opportunities for Weimaraners
+- 🏃 **Activities & Jobs**: Exercise recommendations and purpose-driven work ideas for high-energy Weimaraners
 - 🏠 **Rescue Resources**: Rescue organization listings and support information
 - 👪 **Adoption Guidance**: Complete adoption process and preparation guides
 - ♿ **Fully Accessible**: WCAG compliant with comprehensive accessibility testing
@@ -44,8 +43,7 @@ src/
 │   ├── index.tsx
 │   ├── breed-info.tsx
 │   ├── training.tsx
-│   ├── activities.tsx
-│   ├── jobs.tsx
+│   ├── activities.tsx   # Combined Activities & Jobs page
 │   ├── rescue.tsx
 │   └── adoption.tsx
 ├── styles/          # Global styles
@@ -106,11 +104,22 @@ This command exports the static site and copies it into `build/production` for S
 
 ## Recent Updates
 
+### Content & Structure
+- ✅ **Combined Activities & Jobs pages** into single comprehensive page with two sections
+- ✅ **Page content separation**: Created independent content arrays (homeHighlights, breedInfoHistory, breedInfoCare, breedInfoGallery) for cleaner page management
+- ✅ **Added Fun Facts cards**: Velvet ears and nooking behavior to home page
+- ✅ **Enhanced Breed Info page**: Added detailed history/temperament and care sections with multi-paragraph support
+- ✅ **Expanded activity ideas**: Added Barn Hunts card (5 total activities)
+- ✅ **Expanded job ideas**: Added Search and Rescue (SAR), Field Trials, and Detection Work cards (6 total jobs)
+
+### Technical Improvements
 - ✅ Updated home page breed description with detailed "Gray Ghost" and "Velcro dog" characteristics
-- ✅ Converted gallery images from SVG to PNG format (breed-portrait.png, family-dog.png)
+- ✅ Image format conversions: Converted SVG placeholders to PNG/JPG formats throughout site
+- ✅ Fixed 404 errors by updating all image references to match actual file extensions
 - ✅ Improved header layout with left-justified branding to support future logo integration
-- ✅ Enhanced navigation spacing to prevent text collision at medium breakpoints
-- ✅ Added `whiteSpace: 'nowrap'` to prevent navigation items from wrapping
+- ✅ Enhanced navigation spacing and added `whiteSpace: 'nowrap'` to prevent wrapping
+- ✅ Multi-paragraph description support: SectionBlock component accepts string | string[] for descriptions
+- ✅ MUI Grid v2 migration: Updated components to use size prop instead of deprecated item/xs/md
 
 ## Contributing
 

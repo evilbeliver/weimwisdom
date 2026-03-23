@@ -1,10 +1,26 @@
 
 # Implementation Plan: Sleek and modern Weimaraner website
 
-**Branch**: `001-weimaraner-site` | **Date**: 2026-03-19 | **Spec**: [specs/001-weimaraner-site/spec.md](specs/001-weimaraner-site/spec.md)
+**Branch**: `001-weimaraner-site` | **Created**: 2026-03-19 | **Updated**: 2026-03-23 | **Spec**: [specs/001-weimaraner-site/spec.md](specs/001-weimaraner-site/spec.md)
 **Input**: Feature specification from `/specs/001-weimaraner-site/spec.md`
 
+**Status**: Active Development - Content Expansion Phase
+
 **Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/plan-template.md` for the execution workflow.
+
+## Recent Updates (March 2026)
+
+### Completed Enhancements
+- ✅ **Combined Activities & Jobs**: Merged into single comprehensive page with two sections
+- ✅ **Content Cards Expansion**: 
+  - Home page: Added 6 Fun Facts cards
+  - Breed Info: Added 3 History cards, 5 Care cards, 3 gallery images
+  - Activities: Added Barn Hunts (5 total activities)
+  - Jobs: Added SAR, Field Trials, Detection Work (6 total jobs)
+- ✅ **Page Content Separation**: Created independent arrays for cleaner page management
+- ✅ **Image Format Migration**: Converted SVG to PNG/JPG throughout site
+- ✅ **Component Enhancements**: Multi-paragraph description support in SectionBlock
+- ✅ **Navigation Updates**: Reflects combined Activities & Jobs structure
 
 ## Summary
 Build a sleek, modern, accessible, and performant website for Weimaraner breed info, training, rescue, activities, and jobs. Use Next.js for SPA, MUI for UI, Jest for unit testing, Axe Core for accessibility, Playwright for end-to-end testing. Site must be responsive, mobile-ready, secure, and optimized for Siteground deployment.
@@ -38,12 +54,13 @@ specs/001-weimaraner-site/
 ### Source Code (repository root)
 ```text
 src/
-├── components/        # Shared header, footer, hero, UI elements
-├── pages/             # Home, Breed Info, Training, Rescue, Activities, Jobs
-├── services/          # Data fetching, rescue listings, etc.
+├── components/        # Shared header, footer, hero, UI elements (ResponsiveImage, SectionBlock, etc.)
+├── data/              # siteContent.ts - centralized content arrays
+├── pages/             # Home, Breed Info, Training, Activities & Jobs (combined), Rescue, Adoption
+├── styles/            # globals.css
 └── theme/             # MUI theme customization
 
-
+tests/
 ├── unit/              # Jest unit tests
 ├── integration/       # React Testing Library integration tests
 ├── accessibility/     # Axe Core accessibility tests
