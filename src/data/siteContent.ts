@@ -206,7 +206,7 @@ export const jobIdeas: SpotlightCard[] = [
   },
   {
     title: 'Detection Work',
-    description: 'Dogs utilize their superior sense of smell to identify, locate, and alert to specific target scents, ranging from explosives, drugs, and contraband to missing persons, endangered wildlife, and diseases.',
+    description: 'Weims with their superior sense of smell can be trained to identify, locate, and alert to specific target scents, ranging from explosives, drugs, and contraband to missing persons, endangered wildlife, and diseases.',
   },
 ];
 
