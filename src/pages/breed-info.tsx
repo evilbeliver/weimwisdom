@@ -40,7 +40,7 @@ export default function BreedInfoPage() {
       </SectionBlock>
       <SectionBlock
         title="Breed gallery"
-        description="Photo-rich content helps visitors connect with the breed while descriptive alt text keeps the experience accessible."
+        description=""
         hasContent={breedInfoGallery.length > 0}
         fallback={fallbackMessage}
       >

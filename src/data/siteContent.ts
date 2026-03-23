@@ -32,8 +32,7 @@ export const navLinks: NavLink[] = [
   { label: 'Home', href: '/' },
   { label: 'Breed Info', href: '/breed-info' },
   { label: 'Training', href: '/training' },
-  { label: 'Activities', href: '/activities' },
-  { label: 'Jobs', href: '/jobs' },
+  { label: 'Activities & Jobs', href: '/activities' },
   { label: 'Rescue', href: '/rescue' },
   { label: 'Adoption', href: '/adoption' },
 ];
@@ -179,6 +178,10 @@ export const activityIdeas: SpotlightCard[] = [
     title: 'Structured playdates',
     description: 'Well-matched dog friends and clear breaks help maintain confidence and social skills.',
   },
+  {
+    title: 'Barn Hunts',
+    description: "A fast-growing, competitive dog sport that tests a dog's natural hunting instinct by having them locate safely housed rats in tubes hidden within a maze of straw or hay bales.",
+  },
 ];
 
 export const jobIdeas: SpotlightCard[] = [
@@ -193,6 +196,17 @@ export const jobIdeas: SpotlightCard[] = [
   {
     title: 'Therapy prep candidate',
     description: 'The breed’s closeness with people can translate into calm, structured companionship work.',
+  },  {
+    title: 'Search and Rescue (SAR)',
+    description: 'SAR dogs are specialized working canines trained to locate missing people in wilderness, urban, or disaster settings using their superior sense of smell.',
+  },
+  {
+    title: 'Field Trials',
+    description: 'Elite, purpose-bred canine athletes trained to compete in simulated hunting scenarios that test their instinct, endurance, and obedience.',
+  },
+  {
+    title: 'Detection Work',
+    description: 'Dogs utilize their superior sense of smell to identify, locate, and alert to specific target scents, ranging from explosives, drugs, and contraband to missing persons, endangered wildlife, and diseases.',
   },
 ];
 
