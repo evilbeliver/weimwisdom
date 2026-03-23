@@ -20,7 +20,7 @@ export default function HomePage() {
         title="What makes Weimaraners unforgettable"
         description={[
           "With over 25 years of experience living with Weimaraner's, I've learned that these \"Gray Ghosts\" are far more than just pets—they are highly intelligent, \"human-like\" companions with the mental energy and sass of a perpetual toddler. Possessing an uncanny ability to understand their families, Weims thrive on deep bonds but require a strong, caring leader to navigate their unique personalities. They are notorious \"Velcro dogs\" who want to be involved in everything you do, and without proper training, their intense desire to please can quickly manifest as separation anxiety or a series of clever \"Weim Crimes.\"",
-          "Living with a Weimaraner is an acquired taste; they are equivalent to a 3-to-5-year-old child who is constantly learning, challenging boundaries, and prone to the occasional temper tantrum. Because they are elite puzzle solvers—capable of opening everything from doors, refrigerators, to 12-packs of beer—they require constant mental and physical stimulation. If they aren't given a job, they will surely \"hire themselves\" for one you won't like, often resulting in the destruction of furniture or siding. While I often find myself talking people out of the breed to ensure a proper match, there is truly nothing more stunning than seeing a Weimaraner in their element. Whether they are hunting or working, their grace and focus make every challenge of the breed entirely worth it."
+          "Living with a Weimaraner is an acquired taste; they are equivalent to a 3-to-5-year-old child who is constantly learning, challenging boundaries, and prone to the occasional temper tantrum. Because they are elite puzzle solvers—capable of opening everything from doors, refrigerators, to 12-packs of beer—they require constant mental and physical stimulation. If they aren't given a job, they will surely \"hire themselves\" for one you won't like, often resulting in the destruction of furniture or other precious items. While I often find myself talking people out of the breed to ensure a proper match, there is truly nothing more stunning than seeing a Weimaraner in their element. Whether they are hunting or working, their grace and focus make every challenge of the breed entirely worth it."
         ]}
         hasContent={homeHighlights.length > 0}
         fallback={fallbackMessage}
@@ -48,7 +48,7 @@ export default function HomePage() {
       <Box sx={{ py: { xs: 7, md: 10 } }}>
         <Container maxWidth="lg">
           <Grid container spacing={3}>
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <Stack spacing={2.5}>
                 <Typography variant="h2">Plan your next visit</Typography>
                 <Typography color="text.secondary">
@@ -64,7 +64,7 @@ export default function HomePage() {
                 </Stack>
               </Stack>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Alert severity="success">Mobile-friendly layouts, accessible navigation, and static export support are built in site-wide.</Alert>
             </Grid>
           </Grid>
