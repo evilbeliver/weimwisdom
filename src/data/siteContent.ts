@@ -116,6 +116,24 @@ export const breedInfoHistory: SpotlightCard[] = [
   },
 ];
 
+export const breedInfoCare: SpotlightCard[] = [
+  {
+    eyebrow: 'Health',
+    title: 'Bloat and deep chest concerns',
+    description: 'Their deep chests make them highly susceptible to life-threatening bloat (gastric torsion) requiring immediate veterinary attention.',
+  },
+  {
+    eyebrow: 'Exercise',
+    title: '1-2 hours daily activity required',
+    description: 'High energy levels demand vigorous exercise, mental stimulation, and structured activities to prevent destructive behavior.',
+  },
+  {
+    eyebrow: 'Companionship',
+    title: 'Separation anxiety prevention',
+    description: 'Their intense bond with owners requires constant companionship and training to manage alone time successfully.',
+  },
+];
+
 export const trainingGuides: SpotlightCard[] = [
   {
     eyebrow: 'Foundation',
