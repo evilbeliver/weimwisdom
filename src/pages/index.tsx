@@ -29,7 +29,7 @@ export default function HomePage() {
       </SectionBlock>
       <SectionBlock
         eyebrow="Fast facts"
-        title="Fun facts for future running buddies"
+        title="Fun facts about your future companion"
         description="From their famous silver coat to their love of closeness, these quick facts help visitors understand the breed at a glance."
         hasContent={breedFacts.length > 0}
         fallback={fallbackMessage}
