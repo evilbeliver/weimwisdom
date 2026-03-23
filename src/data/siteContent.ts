@@ -275,8 +275,8 @@ export const breedInfoGallery: ImageItem[] = [
     caption: 'A Weimaraner enjoying the finer things in life',
   },
   {
-    src: '/images/weim-soccer.jpg',
-    alt: 'Weimaraner playing with soccer ball',
+    src: '/images/weim-pheasant.png',
+    alt: 'Weimaraner with pheasant',
     caption: 'Athletic prowess on full display',
   },
   {
