@@ -179,7 +179,7 @@ export const activityIdeas: SpotlightCard[] = [
     description: 'Well-matched dog friends and clear breaks help maintain confidence and social skills.',
   },
   {
-    title: 'Barn Hunts',
+    title: 'Barn hunt',
     description: "A fast-growing, competitive dog sport that tests a dog's natural hunting instinct by having them locate safely housed rats in tubes hidden within a maze of straw or hay bales.",
   },
 ];
@@ -190,11 +190,11 @@ export const jobIdeas: SpotlightCard[] = [
     description: 'Older, conditioned Weimaraners often love consistent jogging and canicross routines.',
   },
   {
-    title: 'Search helper',
-    description: 'Hide-and-seek, article search, and beginner tracking channel focus into teamwork.',
+    title: 'Hunt and field work',
+    description: 'Highly athletic, intelligent, and driven dogs, with specialized skills for upland birds, waterfowl, or small game tracking.',
   },
   {
-    title: 'Therapy prep candidate',
+    title: 'Therapy work',
     description: 'The breed’s closeness with people can translate into calm, structured companionship work.',
   },  {
     title: 'Search and Rescue (SAR)',
