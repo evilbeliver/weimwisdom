@@ -3,7 +3,7 @@ import { PageHero } from '@/components/PageHero';
 import { SectionBlock } from '@/components/SectionBlock';
 import { SiteLayout } from '@/components/SiteLayout';
 import { SpotlightGrid } from '@/components/SpotlightGrid';
-import { breedFacts, fallbackMessage, galleryImages, homeHighlights } from '@/data/siteContent';
+import { breedFacts, breedInfoHistory, fallbackMessage, galleryImages } from '@/data/siteContent';
 
 export default function BreedInfoPage() {
   return (
@@ -22,10 +22,10 @@ export default function BreedInfoPage() {
           "Living with a \"Velcro Dog\"",
           "Owning a Weimaraner is a full-time lifestyle choice. Known as \"Velcro Dogs,\" they don't just follow you—they shadow your every move. Their extreme loyalty is matched only by their massive energy levels; without 1–2 hours of vigorous daily exercise, these dogs will happily \"redecorate\" your home out of boredom. They are the muses of pop culture, famously captured in William Wegman's photography and even haunting the halls of the White House during the Eisenhower administration (until a rug-related incident led to a presidential eviction)."
         ]}
-        hasContent={homeHighlights.length > 0}
+        hasContent={breedInfoHistory.length > 0}
         fallback={fallbackMessage}
       >
-        <SpotlightGrid items={homeHighlights} />
+        <SpotlightGrid items={breedInfoHistory} />
       </SectionBlock>
       <SectionBlock
         title="Care essentials"

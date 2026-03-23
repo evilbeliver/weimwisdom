@@ -98,6 +98,24 @@ export const breedFacts: SpotlightCard[] = [
   },
 ];
 
+export const breedInfoHistory: SpotlightCard[] = [
+  {
+    eyebrow: 'Noble Origins',
+    title: 'Exclusive hunting companion',
+    description: 'Bred in 19th-century German courts for big game hunting, the Weimaraner was kept exclusive to aristocracy for decades.',
+  },
+  {
+    eyebrow: 'Intelligence',
+    title: 'The dog with a human brain',
+    description: 'A sophisticated blend of Bloodhound, German Shorthaired Pointer, and extinct French hounds created exceptional intelligence.',
+  },
+  {
+    eyebrow: 'Lifestyle',
+    title: 'Full-time companionship required',
+    description: 'These "Velcro Dogs" demand 1-2 hours of daily exercise and constant human interaction to thrive.',
+  },
+];
+
 export const trainingGuides: SpotlightCard[] = [
   {
     eyebrow: 'Foundation',
