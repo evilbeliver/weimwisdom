@@ -66,14 +66,11 @@ export default function HomePage() {
               </Stack>
             </Grid>
             <Grid size={{ xs: 12, md: 4 }}>
-              <Stack spacing={3}>
-                <ResponsiveImage 
-                  src="/images/weim-beware.jpg" 
-                  alt="Weimaraner warning sign"
-                  caption="Fair warning for the uninitiated"
-                />
-                <Alert severity="success">Mobile-friendly layouts, accessible navigation, and static export support are built in site-wide.</Alert>
-              </Stack>
+              <ResponsiveImage 
+                src="/images/weim-beware.jpg" 
+                alt="Weimaraner warning sign"
+                caption="Fair warning for the uninitiated"
+              />
             </Grid>
           </Grid>
         </Container>
