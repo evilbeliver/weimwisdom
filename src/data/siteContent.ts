@@ -88,6 +88,14 @@ export const breedFacts: SpotlightCard[] = [
     title: 'Adventure-ready companions',
     description: 'Hikes, canicross, scent work, and structured fetch all match their stamina and curiosity.',
   },
+  {
+    title: 'Famous velvet soft ears',
+    description: 'Weimaraner ears are famously soft, long, and velvety, often described as a defining, affectionate trait of the breed.',
+  },
+  {
+    title: 'Nooking',
+    description: 'Nooking is a common self-soothing behavior in Weimaraners where they knead and suckle on blankets or stuffed toys to relax or fall asleep.',
+  },
 ];
 
 export const trainingGuides: SpotlightCard[] = [
