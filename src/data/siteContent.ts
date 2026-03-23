@@ -132,6 +132,16 @@ export const breedInfoCare: SpotlightCard[] = [
     title: 'Separation anxiety prevention',
     description: 'Their intense bond with owners requires constant companionship and training to manage alone time successfully.',
   },
+  {
+    eyebrow: 'Grooming',
+    title: 'Coat Maintenance',
+    description: 'Weimaraner coat care is low-maintenance due to their short, single-layered, and sleek fur, requiring weekly brushing. They are moderate, year-round shedders, benefiting from occasional baths to manage "doggy odor" or dirt.',
+  },
+  {
+    eyebrow: 'Health',
+    title: 'Ear Care',
+    description: 'Their long, floppy ears are prone to trapping moisture and developing infections. Check and clean them weekly with a vet-approved cleaner.',
+  },
 ];
 
 export const trainingGuides: SpotlightCard[] = [

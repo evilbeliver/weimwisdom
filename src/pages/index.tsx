@@ -39,8 +39,8 @@ export default function HomePage() {
       </SectionBlock>
       <SectionBlock
         eyebrow="Photo gallery"
-        title="Pictures that capture the gray ghost vibe"
-        description="The site stays photo-rich while still handling missing assets gracefully with a friendly fallback state."
+        title="Pictures that capture the Gray Ghost vibe"
+        description=""
         hasContent={galleryImages.length > 0}
         fallback={fallbackMessage}
       >

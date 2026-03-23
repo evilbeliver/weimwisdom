@@ -31,7 +31,7 @@ export default function BreedInfoPage() {
         title="Care essentials"
         description={[
           "Health & Care Essentials",
-          "With a lifespan of 10–13 years, the Weimaraner is a sturdy companion but does come with specific \"maintenance\" requirements. Their deep chests make them highly susceptible to bloat (gastric torsion), a life-threatening condition that requires immediate attention. Potential owners should also be mindful of hip dysplasia and heart issues. Also due to their athleticism ACL tears are another common injury regarding this breed.While their short, silver-gray coats are low-maintenance, their hearts are high-maintenance—requiring constant companionship to ward off their trademark separation anxiety."
+          "With a lifespan of 10–13 years, the Weimaraner is a sturdy companion but does come with specific \"maintenance\" requirements. Their deep chests make them highly susceptible to bloat (gastric torsion), a life-threatening condition that requires immediate attention. Potential owners should also be mindful of hip dysplasia and heart issues. Also due to their athleticism ACL tears are another common injury regarding this breed. While their short, silver-gray coats are low-maintenance, their hearts are high-maintenance—requiring constant companionship to ward off their trademark separation anxiety."
         ]}
         hasContent={breedInfoCare.length > 0}
         fallback={fallbackMessage}
