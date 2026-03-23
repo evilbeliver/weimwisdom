@@ -10,11 +10,18 @@ export default function BreedInfoPage() {
     <SiteLayout title="Breed Info | WeimWisdom" description="History, temperament, and care guidance for Weimaraners.">
       <PageHero
         title="Breed info that balances beauty, history, and practical care"
-        description="Start with the essentials: what the breed was built for, what daily life looks like, and how to support a happy, fulfilled Weimaraner."
+        description="The Weim Life: what the breed was built for, what daily life looks like, and how to support a happy, fulfilled Weimaraner."
       />
       <SectionBlock
         title="History and temperament"
-        description="Weimaraners are elegant sporting dogs with serious brains, strong attachment to their people, and a playful streak that needs good outlets."
+        description={[
+          "The Gray Ghost: A Noble History",
+          "The Weimaraner began as the ultimate \"VIP-only\" hunting partner in the early 19th-century court of Grand Duke Karl August of Weimar. Originally engineered to tackle heavyweights like wolves and bears, these silver-coated hunters were kept under strict lock and key by the German aristocracy. For decades, the breed was so exclusive that you couldn't even own one unless you were a member of the elite German Weimaraner Club. It wasn't until the late 1920s that the breed \"broke\" into the U.S. market, eventually gaining official recognition by the AKC in 1943.",
+          "The \"Human Brain\" & DNA",
+          "While their exact genetic recipe remains a well-guarded secret, the Weimaraner is a masterclass in canine engineering. It's believed that noblemen blended the Bloodhound's legendary nose with the German Shorthaired Pointer's athleticism and the refined traits of the now-extinct French Grey Saint Louis Hound. This sophisticated mix created a dog so intelligent it earned the nickname \"the dog with the human brain.\" They are born with striking blue eyes and temporary \"tiger stripes,\" eventually maturing into the sleek, amber-eyed athletes we recognize today.",
+          "Living with a \"Velcro Dog\"",
+          "Owning a Weimaraner is a full-time lifestyle choice. Known as \"Velcro Dogs,\" they don't just follow you—they shadow your every move. Their extreme loyalty is matched only by their massive energy levels; without 1–2 hours of vigorous daily exercise, these dogs will happily \"redecorate\" your home out of boredom. They are the muses of pop culture, famously captured in William Wegman's photography and even haunting the halls of the White House during the Eisenhower administration (until a rug-related incident led to a presidential eviction)."
+        ]}
         hasContent={homeHighlights.length > 0}
         fallback={fallbackMessage}
       >
@@ -22,7 +29,10 @@ export default function BreedInfoPage() {
       </SectionBlock>
       <SectionBlock
         title="Care essentials"
-        description="Healthy routines center on exercise, enrichment, calm downtime, and predictable structure."
+        description={[
+          "Health & Care Essentials",
+          "With a lifespan of 10–13 years, the Weimaraner is a sturdy companion but does come with specific \"maintenance\" requirements. Their deep chests make them highly susceptible to bloat (gastric torsion), a life-threatening condition that requires immediate attention. Potential owners should also be mindful of hip dysplasia and heart issues. Also due to their athleticism ACL tears are another common injury regarding this breed.While their short, silver-gray coats are low-maintenance, their hearts are high-maintenance—requiring constant companionship to ward off their trademark separation anxiety."
+        ]}
         hasContent={breedFacts.length > 0}
         fallback={fallbackMessage}
       >
