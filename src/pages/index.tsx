@@ -29,7 +29,7 @@ export default function HomePage() {
         <SpotlightGrid items={homeHighlights} />
       </SectionBlock>
       <SectionBlock
-        eyebrow="Fast facts"
+        eyebrow="Fun facts"
         title="Fun facts about your future companion"
         description={`Draped in shimmering silver velvet, the Weimaraner is a "Gray Ghost" with a heart of pure gold—and just a dash of drama. These velvety-eared adventurers are a "ready-to-go" starter pack for anyone seeking a shadow, as they are famously human-oriented and might actually believe they are tiny lap dogs. While they are wickedly fast learners, they come with a side of big, sensitive feelings; one stern look and you'll see those soulful eyes crumble! To soothe their inner "savage beast" after a long day of questing, you'll often find them "nooking"—a whimsical, rhythmic suckling on their favorite blanket that turns these fierce hunters back into adorable, oversized babies.`}
         hasContent={breedFacts.length > 0}
