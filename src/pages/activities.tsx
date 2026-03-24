@@ -14,14 +14,16 @@ export default function ActivitiesPage() {
       />
       <SectionBlock
         title="Favorite ways to burn energy wisely"
-        description="These ideas match the breed’s athleticism while keeping recovery, focus, and enjoyment in the mix."
+        description="Ever wondered how to describe the sheer, unbridled spirit of a Weimaraner? Imagine a silver-coated athlete who missed the memo on &ldquo;slowing down.&rdquo; While most dogs settle into their golden years early, a Weim stays a vibrant, bouncy puppy until they&rsquo;re 7 or 8—and since they usually live to be 10 to 13, you&rsquo;re in for a long, joyful marathon!
+In the dog world, Weims are the elite Olympians. They don&rsquo;t just want a stroll; they crave a mission. There&rsquo;s a secret handshake among Weim owners: A good Weim is a tired Weim, but a legendary Weim is an exhausted one.
+To keep these beautiful whirlwinds happy, you&rsquo;ll need to work their brains just as hard as their legs. If you think a quick walk and a &ldquo;high-five&rdquo; will cut it, your Weim might have other (likely more chaotic) plans! To help you prepare for life with your tireless new shadow, here are a few ways to keep their minds sharp and their tails wagging."
         hasContent={activityIdeas.length > 0}
         fallback={fallbackMessage}
       >
         <SpotlightGrid items={activityIdeas} />
       </SectionBlock>      <SectionBlock
         title="Purpose-driven work ideas"
-        description="From running partnerships to search games, these jobs help satisfy instinct and give your Weimaraner a sense of purpose."
+        description="Listen, your Weimaraner is a gorgeous grey genius, but let&rsquo;s be real: the &ldquo;freeloader&rdquo; lifestyle isn&rsquo;t working. If their only daily &ldquo;job&rdquo; is supervising your bathroom trips, you&rsquo;re asking for trouble! Weims aren&rsquo;t just built to look like velvet statues; they are high-octane professional athletes trapped in your living room. To them, a &ldquo;job&rdquo; isn&rsquo;t a 9-to-5 grind—it&rsquo;s the difference between being a &ldquo;Good Boy&rdquo; and a &ldquo;Lounge Room Excavator.&rdquo; Why your Velveteen Land Shark needs a resume: The Brain Game: Without a task, their massive brain starts &ldquo;redecorating&rdquo; (read: eating your drywall). Mental stimulation is the only thing that actually tires them out. The On/Off Switch: A working Weim learns when it&rsquo;s &ldquo;Go Time&rdquo; and when it&rsquo;s &ldquo;Sofa Time.&rdquo; Without a job, they stay permanently stuck in &ldquo;Chaotic Zoomie Mode.&rdquo; Identity Crisis: They were bred to hunt and haul. Without a purpose, they&rsquo;ll find their own work—like professional squirrel stalking or counter-surfing for sourdough."
         hasContent={jobIdeas.length > 0}
         fallback={fallbackMessage}
       >
