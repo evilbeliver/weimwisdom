@@ -51,7 +51,7 @@ export function HeroSection() {
           }}
         >
           <Stack spacing={2.5} sx={{ maxWidth: 760 }}>
-            <Chip label="Modern guide to the silver shadow" color="secondary" sx={{ alignSelf: 'flex-start', fontWeight: 700 }} />
+            <Chip label="Modern guide to the gray ghost" color="secondary" sx={{ alignSelf: 'flex-start', fontWeight: 700 }} />
             <Typography variant="h1" sx={{ color: 'common.white', fontSize: { xs: '2.6rem', md: '4.9rem' }, textShadow: '0 4px 26px rgba(0,0,0,0.45)' }}>
               Sleek, smart, and endlessly devoted Weimaraners.
             </Typography>
