@@ -32,8 +32,8 @@ export type HeroImage = {
 export const navLinks: NavLink[] = [
   { label: 'Home', href: '/' },
   { label: 'Breed Info', href: '/breed-info' },
-  { label: 'Training', href: '/training' },
   { label: 'Activities & Jobs', href: '/activities' },
+  { label: 'Training', href: '/training' },
   { label: 'Adoption', href: '/adoption' },
 ];
 
