@@ -56,7 +56,7 @@ export function HeroSection() {
               Sleek, smart, and endlessly devoted Weimaraners.
             </Typography>
             <Typography component="p" variant="h5" sx={{ color: 'rgba(255,255,255,0.92)', maxWidth: 700 }}>
-              Explore breed info, practical training ideas, rescue support, and fun ways to keep an active Weimaraner fulfilled.
+              Explore breed info, activities & jobs, training guidance, and adoption resources to keep your Weimaraner fulfilled.
             </Typography>
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
               <Button component={Link} href="/breed-info" variant="contained" endIcon={<ArrowForwardRoundedIcon />}>
