@@ -40,7 +40,10 @@ export default function BreedInfoPage() {
       </SectionBlock>
       <SectionBlock
         title="Breed gallery"
-        description={`Our first scene shows a silvery shadow in a moment of pure, slightly mischievous bliss—relaxing and enjoying the finer things in life. Being true German dogs, their sophisticated palate often leads them to eye their owner's beer, proving that even ghosts can't resist a cold brew! Then, watch as the phantom comes alive in your photo; a masterful "Gray Ghost" in action, gracefully gliding through the frosty stalks with a pheasant on a beautiful retrieve. To finish, we have the pinnacle of poise: a perfectly stacked Weimaraner, showcasing the posture and timeless elegance that makes this breed a living, breathing work of art.`}
+        description={[
+          `Our gallery begins with a glimpse into the Weimaraner's softer side—a silvery shadow enjoying a moment of pure, slightly mischievous bliss. These are true German dogs with sophisticated palates, and as you'll see, their love for their owner often extends to eyeing a cold beer! It seems even ghosts can't resist a good brew.`,
+          `Next, the phantom truly comes alive. In this stunning shot, a masterful "Gray Ghost" glides through frosty stalks, showcasing a beautiful pheasant retrieve with effortless grace. We finish with the pinnacle of poise: a perfectly stacked Weimaraner. With its impeccable posture and timeless elegance, this breed is truly a living, breathing work of art.`
+        ]}
         hasContent={breedInfoGallery.length > 0}
         fallback={fallbackMessage}
       >
