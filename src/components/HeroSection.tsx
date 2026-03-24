@@ -53,7 +53,7 @@ export function HeroSection() {
           <Stack spacing={2.5} sx={{ maxWidth: 760 }}>
             <Chip label="Modern guide to the gray ghost" color="secondary" sx={{ alignSelf: 'flex-start', fontWeight: 700 }} />
             <Typography variant="h1" sx={{ color: 'common.white', fontSize: { xs: '2.6rem', md: '4.9rem' }, textShadow: '0 4px 26px rgba(0,0,0,0.45)' }}>
-              Sleek, smart, and endlessly devoted Weimaraners.
+              Weimaraners... sleek, smart, and endlessly devoted.
             </Typography>
             <Typography component="p" variant="h5" sx={{ color: 'rgba(255,255,255,0.92)', maxWidth: 700 }}>
               Explore breed info, activities & jobs, training guidance, and adoption resources to keep your Weimaraner fulfilled.
