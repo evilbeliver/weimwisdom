@@ -40,7 +40,7 @@ To keep these beautiful whirlwinds happy, you'll need to work their brains just 
         <SpotlightGrid items={jobIdeas} />
       </SectionBlock>      <SectionBlock
         title="See the action"
-        description="Visual examples help visitors imagine a routine that suits both dog and human."
+        description={`Imagine a silvery ghost gliding through the frost, a Weimaraner in its element is a master of the "gray matter" and grit. Whether they are sniffing out shed antlers hidden like ivory treasures in the brush or dashing through the field with the grace of a gazelle, these dogs don't just "work"—they perform a high-stakes ballet. Look closely at that third photo; that's not just a stare, it's a laser-focused intensity that says they were born for the thrill of the hunt, turning every outing into an epic quest.`}
         hasContent={activitiesGalleryImages.length > 0}
         fallback={fallbackMessage}
       >
