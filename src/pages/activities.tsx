@@ -9,7 +9,7 @@ import { activityIdeas, fallbackMessage, jobIdeas } from '@/data/siteContent';
 const activitiesGalleryImages = [
   { src: '/images/weim-antler.jpg', alt: 'Weimaraner with antler', caption: 'Activities in action', objectPosition: 'center top' },
   { src: '/images/weim-hunt.jpg', alt: 'Weimaraner hunting', caption: 'Keeping active and engaged' },
-  { src: '/images/placeholder-03.jpg', alt: 'Weimaraner activities example 3', caption: 'Purpose-driven exercise' },
+  { src: '/images/weim-snow.jpg', alt: 'Weimaraner in snow', caption: 'Purpose-driven exercise' },
 ];
 
 export default function ActivitiesPage() {
