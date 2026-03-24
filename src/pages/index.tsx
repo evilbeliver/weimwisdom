@@ -40,7 +40,10 @@ export default function HomePage() {
       <SectionBlock
         eyebrow="Photo gallery"
         title="Pictures that capture the Gray Ghost vibe"
-        description=""
+        description={[
+          `Step into the world of the "Gray Ghost," where a silvery shadow dances through the mist with the grace of a phantom. It all begins with those enchanting Blue Caspian sea puppy eyes—a fleeting, oceanic gaze that eventually transforms into the iconic, piercing amber stare of a soulful adult.`,
+          `In these snapshots, you'll see their athleticism in full flight, whether they are following a faint trail with a masterful nose or holding a steady, patient point built on a foundation of absolute trust. But don't let the elegance fool you; behind those velvet ears lurks a mischievous spirit prone to the ever-eccentric "Weim Crimes." Whether they're stealing your sandwich or your spot on the couch, they do it with a charm that makes every "crime" mostly just adorable.`
+        ]}
         hasContent={galleryImages.length > 0}
         fallback={fallbackMessage}
       >
