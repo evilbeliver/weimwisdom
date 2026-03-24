@@ -11,7 +11,7 @@ export default function TrainingPage() {
     <SiteLayout title="Training | WeimWisdom" description="Training guides and enrichment plans for energetic, intelligent Weimaraners.">
       <PageHero
         title="Training plans for bright dogs with big engines"
-        description="Use short sessions, clear reinforcement, and daily decompression to turn energy into teamwork."
+        description={`Meet the Weimaraner: a silver-coated mastermind that is roughly 10% dog, 90% manipulative raptor, and 100% smarter than you. If you don't provide a dedicated "training program," these little terrorists will happily stage a bloodless coup, seizing your home and crowning themselves the supreme King or Queen of the couch. Negotiating with a Weim is like playing chess against a ghost who steals your pieces when you aren't looking. They don't just "play unfair"—they rewrite the rulebook to ensure the odds are always stacked in their favor. To the untrained eye, a stubborn Weim might appear "dim," but don't be fooled! That blank stare is actually a high-speed processor downloading your weaknesses. They aren't dumb; they're just bored of your "sit" and "stay" routines and are currently calculating how to make you serve them treats on a silver platter. Without proper boundaries, you aren't a dog owner—you're a full-time butler to a very handsome, very silver heathen.`}
       />
       <SectionBlock
         title="Guides that fit the breed"
