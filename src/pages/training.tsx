@@ -22,18 +22,18 @@ export default function TrainingPage() {
         <SpotlightGrid items={trainingGuides} />
       </SectionBlock>
       <SectionBlock
-        title="Training Videos"
-        description="Watch detailed training demonstrations and learn proven techniques for working with Weimaraners."
+        title="Training Videos- Coming Soon"
+        description="Watch detailed training demonstrations and learn proven techniques."
         hasContent
       >
         <Box sx={{ textAlign: 'center', py: 4 }}>
           <Stack spacing={3} alignItems="center">
             <YouTubeIcon sx={{ fontSize: 64, color: '#FF0000' }} />
             <Typography variant="h6" gutterBottom>
-              Subscribe to our YouTube channel for exclusive training content
+              Subscribe to our YouTube channel Balanced Leash for exclusive training content
             </Typography>
             <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 600 }}>
-              Get access to step-by-step training videos, behavior tips, and expert guidance specifically designed for Weimaraner owners.
+              Get access to step-by-step training videos, behavior tips, and expert guidance.
             </Typography>
             <Button
               variant="contained"

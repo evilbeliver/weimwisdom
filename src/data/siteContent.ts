@@ -181,6 +181,10 @@ export const activityIdeas: SpotlightCard[] = [
     title: 'Barn hunt',
     description: "A fast-growing, competitive dog sport that tests a dog's natural hunting instinct by having them locate safely housed rats in tubes hidden within a maze of straw or hay bales.",
   },
+  {
+    title: 'Shed hunting',
+    description: 'Dogs trained to locate dropped deer or elk antlers, making it an excellent, active off-season activity during late winter early spring.',
+  },
 ];
 
 export const jobIdeas: SpotlightCard[] = [
