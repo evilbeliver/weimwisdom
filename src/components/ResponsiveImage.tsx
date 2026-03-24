@@ -6,9 +6,10 @@ type ResponsiveImageProps = {
   alt: string;
   caption?: string;
   height?: number;
+  objectPosition?: string;
 };
 
-export function ResponsiveImage({ src, alt, caption, height = 280 }: ResponsiveImageProps) {
+export function ResponsiveImage({ src, alt, caption, height = 280, objectPosition = 'center' }: ResponsiveImageProps) {
   const [hasError, setHasError] = useState(!src);
 
   if (hasError) {
@@ -44,6 +45,7 @@ export function ResponsiveImage({ src, alt, caption, height = 280 }: ResponsiveI
           width: '100%',
           height,
           objectFit: 'cover',
+          objectPosition,
           borderRadius: 4,
           border: '1px solid',
           borderColor: 'rgba(73, 97, 122, 0.1)',

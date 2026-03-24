@@ -13,6 +13,7 @@ export type ImageItem = {
   src: string;
   alt: string;
   caption: string;
+  objectPosition?: string;
 };
 
 export type RescueListing = {

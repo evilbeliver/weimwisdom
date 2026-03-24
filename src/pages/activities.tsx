@@ -7,8 +7,8 @@ import { activityIdeas, fallbackMessage, jobIdeas } from '@/data/siteContent';
 
 // Activities page specific gallery images
 const activitiesGalleryImages = [
-  { src: '/images/placeholder-01.jpg', alt: 'Weimaraner activities example 1', caption: 'Activities in action' },
-  { src: '/images/placeholder-02.jpg', alt: 'Weimaraner activities example 2', caption: 'Keeping active and engaged' },
+  { src: '/images/weim-antler.jpg', alt: 'Weimaraner with antler', caption: 'Activities in action', objectPosition: 'center top' },
+  { src: '/images/weim-hunt.jpg', alt: 'Weimaraner hunting', caption: 'Keeping active and engaged' },
   { src: '/images/placeholder-03.jpg', alt: 'Weimaraner activities example 3', caption: 'Purpose-driven exercise' },
 ];
 
