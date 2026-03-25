@@ -1,6 +1,8 @@
 # Dependencies
 node_modules
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 # Next.js
 .next
@@ -15,36 +17,57 @@ test-results
 .playwright
 
 # Build outputs
-build/production
+build
 dist
 
 # Environment variables
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env*.local
+.env.development
+.env.test
+.env.production
 
 # Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 *.log
 
 # OS files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+*~
 
-# IDE
+# IDE / Editors
 .vscode/*
 !.vscode/tasks.json
 !.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
 .idea
 *.swp
 *.swo
-*~
+*.sublime-project
+*.sublime-workspace
+
+# SWC
+.swc
 
 # Misc
 .cache
 .temp
 .tmp
+.vercel
+*.pid
+*.seed
+*.pid.lock
+
+# Debug
+lerna-debug.log*
+.pnpm-debug.log*

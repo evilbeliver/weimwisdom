@@ -38,7 +38,7 @@ export default function TrainingPage() {
         <Box sx={{ textAlign: 'center', py: 4 }}>
           <Stack spacing={3} alignItems="center">
             <YouTubeIcon sx={{ fontSize: 64, color: '#FF0000' }} />
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h3" gutterBottom>
               Subscribe to our YouTube channel Balanced Leash for exclusive training content
             </Typography>
             <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 600 }}>

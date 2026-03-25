@@ -11,8 +11,11 @@ test('home page loads and exposes primary journey links', async ({ page }) => {
 
 test('secondary content pages render', async ({ page }) => {
   await page.goto('/training');
-  await expect(page.getByRole('heading', { name: /training plans for bright dogs/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /training plans for bright dogs with big engines/i })).toBeVisible();
 
-  await page.goto('/rescue');
-  await expect(page.getByRole('heading', { name: /rescue resources built around patience/i })).toBeVisible();
+  await page.goto('/activities');
+  await expect(page.getByRole('heading', { name: /activities & jobs for dogs who love momentum/i })).toBeVisible();
+
+  await page.goto('/adoption');
+  await expect(page.getByRole('heading', { name: /adoption and readiness guidance/i })).toBeVisible();
 });

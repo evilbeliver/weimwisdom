@@ -9,6 +9,6 @@ describe('home page integration', () => {
     expect(screen.getAllByRole('link', { name: 'Breed Info' })[0]).toHaveAttribute('href', '/breed-info');
     expect(screen.getAllByRole('link', { name: 'Training' })[0]).toHaveAttribute('href', '/training');
     expect(screen.getByRole('heading', { name: /what makes weimaraners unforgettable/i })).toBeInTheDocument();
-    expect(screen.getByText(/mobile-friendly layouts, accessible navigation/i)).toBeInTheDocument();
+    expect(screen.getByText(/I warned you, turn back now/i)).toBeInTheDocument();
   });
 });

@@ -23,10 +23,33 @@ export function SiteHeader() {
   return (
     <AppBar position="sticky" color="inherit" elevation={0} sx={{ borderBottom: '1px solid rgba(73, 97, 122, 0.12)' }}>
       <Container maxWidth="lg">
-        <Toolbar disableGutters sx={{ minHeight: 76, gap: 2 }}>
-          <Typography component={Link} href="/" variant="h5" sx={{ fontWeight: 900, color: 'primary.dark', mr: 3 }}>
-            WeimWisdom
-          </Typography>
+        <Toolbar disableGutters sx={{ minHeight: { xs: 80, md: 96 }, gap: 2 }}>
+          <Box
+            component={Link}
+            href="/"
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 1.5,
+              textDecoration: 'none',
+              mr: 3,
+            }}
+          >
+            <Box
+              component="img"
+              src="/images/weim-logo.png"
+              alt="WeimWisdom Logo"
+              sx={{
+                height: { xs: 56, md: 72 },
+                width: 'auto',
+                objectFit: 'contain',
+                borderRadius: 2,
+              }}
+            />
+            <Typography variant="h5" sx={{ fontWeight: 900, color: 'primary.dark', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
+              WeimWisdom
+            </Typography>
+          </Box>
           <Box sx={{ flexGrow: 1 }} />
           <Stack direction="row" spacing={0.5} sx={{ display: { xs: 'none', md: 'flex' } }}>
             {navLinks.map((link) => (
@@ -56,9 +79,31 @@ export function SiteHeader() {
       </Container>
       <Drawer anchor="right" open={open} onClose={() => setOpen(false)}>
         <Box sx={{ width: 280, p: 2 }} role="presentation">
-          <Typography variant="h6" sx={{ px: 2, pt: 1, pb: 2 }}>
-            Explore
-          </Typography>
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 1.5,
+              px: 2,
+              pt: 1,
+              pb: 2,
+            }}
+          >
+            <Box
+              component="img"
+              src="/images/weim-logo.png"
+              alt="WeimWisdom Logo"
+              sx={{
+                height: 40,
+                width: 'auto',
+                objectFit: 'contain',
+                borderRadius: 1.5,
+              }}
+            />
+            <Typography variant="h6" sx={{ fontWeight: 900, color: 'primary.dark' }}>
+              Explore
+            </Typography>
+          </Box>
           <List>
             {navLinks.map((link) => (
               <ListItemButton component={Link} href={link.href} key={link.href} onClick={() => setOpen(false)}>
