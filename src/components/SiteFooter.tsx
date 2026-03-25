@@ -38,14 +38,14 @@ export function SiteFooter() {
           <Box>
             <Stack spacing={1.2}>
               <Typography component="p" variant="overline" sx={{ opacity: 0.7 }}>
-                Standards
+                Contact
               </Typography>
-              <Typography component="p" sx={{ opacity: 0.82 }}>
-                Built for WCAG-minded navigation, responsive browsing, and static deployment.
-              </Typography>
-              <Typography component="p" sx={{ opacity: 0.82 }}>
-                Use the resource pages as a starting point and adapt them to your region and rescue network.
-              </Typography>
+              <MuiLink href="mailto:weimcrime@weimwisdom.com" color="inherit" underline="hover" sx={{ opacity: 0.82 }}>
+                weimcrime@weimwisdom.com
+              </MuiLink>
+              <MuiLink href="tel:+15136076445" color="inherit" underline="hover" sx={{ opacity: 0.82 }}>
+                513-607-6445
+              </MuiLink>
             </Stack>
           </Box>
         </Box>
