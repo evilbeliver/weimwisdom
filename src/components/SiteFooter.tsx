@@ -19,7 +19,7 @@ export function SiteFooter() {
                 WeimWisdom
               </Typography>
               <Typography component="p" sx={{ opacity: 0.82 }}>
-                Breed facts, training plans, activity ideas, rescue support, and adoption guidance for life with a silver shadow.
+                Breed facts, activities & jobs, training plans, and adoption guidance for life with your gray ghost.
               </Typography>
             </Stack>
           </Box>
