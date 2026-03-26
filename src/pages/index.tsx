@@ -54,8 +54,8 @@ export default function HomePage() {
           <Grid container spacing={3}>
             <Grid size={{ xs: 12, md: 8 }}>
               <Stack spacing={2.5}>
-                <Typography variant="h2">Continue at your own Risk</Typography>
-                <Typography color="text.secondary">
+                <Typography variant="h2" sx={{ fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' } }}>Continue at your own Risk</Typography>
+                <Typography color="text.secondary" sx={{ fontSize: { xs: '1rem', sm: '1rem', md: '1.125rem' } }}>
                   I warned you, turn back now..progressing further will lead you futher down the weim rabbit hole, and you may never look at dogs the same way again. But if you&apos;re ready to embrace the chaos, click through to explore training tips, activities, rescue resources, and more to keep your Weimaraner happy and fulfilled.
                 </Typography>
                 <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>

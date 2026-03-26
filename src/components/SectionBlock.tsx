@@ -29,7 +29,7 @@ export function SectionBlock({
               {eyebrow}
             </Typography>
           ) : null}
-          <Typography variant="h2">{title}</Typography>
+          <Typography variant="h2" sx={{ fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' } }}>{title}</Typography>
           {Array.isArray(description) ? (
             <Stack spacing={2} maxWidth={760}>
               {description.map((paragraph, index) => (
