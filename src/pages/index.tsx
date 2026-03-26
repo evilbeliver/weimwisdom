@@ -49,7 +49,7 @@ export default function HomePage() {
       >
         <GalleryGrid items={galleryImages} />
       </SectionBlock>
-      <Box sx={{ py: { xs: 7, md: 10 } }}>
+      <Box sx={{ py: { xs: 4, sm: 6, md: 10 } }}>
         <Container maxWidth="lg">
           <Grid container spacing={3}>
             <Grid size={{ xs: 12, md: 8 }}>

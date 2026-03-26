@@ -21,7 +21,7 @@ export function SectionBlock({
   children,
 }: SectionBlockProps) {
   return (
-    <Box component="section" id={id} sx={{ py: { xs: 7, md: 10 } }}>
+    <Box component="section" id={id} sx={{ py: { xs: 4, sm: 6, md: 10 } }}>
       <Container maxWidth="lg">
         <Stack spacing={2.5} mb={4}>
           {eyebrow ? (
