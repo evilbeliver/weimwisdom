@@ -35,6 +35,7 @@ export const navLinks: NavLink[] = [
   { label: 'Activities & Jobs', href: '/activities' },
   { label: 'Training', href: '/training' },
   { label: 'Adoption', href: '/adoption' },
+  { label: 'Blog', href: '/blog' },
 ];
 
 export const heroStats = [
