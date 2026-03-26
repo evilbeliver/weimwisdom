@@ -3,7 +3,7 @@ import { PageHero } from '@/components/PageHero';
 import { SectionBlock } from '@/components/SectionBlock';
 import { SiteLayout } from '@/components/SiteLayout';
 import { SpotlightGrid } from '@/components/SpotlightGrid';
-import { breedInfoCare, breedInfoGallery, breedInfoHistory, fallbackMessage } from '@/data/siteContent';
+import { breedInfoCare, breedInfoGallery, breedInfoHistory, breedInfoVariants, fallbackMessage } from '@/data/siteContent';
 
 export default function BreedInfoPage() {
   return (
@@ -26,6 +26,14 @@ export default function BreedInfoPage() {
         fallback={fallbackMessage}
       >
         <SpotlightGrid items={breedInfoHistory} />
+      </SectionBlock>
+      <SectionBlock
+        title="Weim Variants"
+        description="Their wardrobe is just as magical, ranging from the shimmering Silver-Gray of moonlight to the deep, moody hues of Mouse-Gray and Blue. Some even sport a rebellious ridge down their spines, giving a playful nod to their adventurous attitudes. And just when you thought the fashion show was over, there are both sleek short-haired models and rare long-haired beauties with flowing locks that would make any shampoo commercial jealous. Whether they're wagging a regal full tail, a traditional docked tail, or anything in between, these whimsical variations only make the breed more captivating. After all, when you're this beautiful, why stick to just one look?"
+        hasContent={breedInfoVariants.length > 0}
+        fallback={fallbackMessage}
+      >
+        <SpotlightGrid items={breedInfoVariants} />
       </SectionBlock>
       <SectionBlock
         title="Care essentials"

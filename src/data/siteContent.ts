@@ -143,6 +143,24 @@ export const breedInfoCare: SpotlightCard[] = [
   },
 ];
 
+export const breedInfoVariants: SpotlightCard[] = [
+  {
+    eyebrow: 'Coat Colors',
+    title: 'Silver-Gray to Blue shades',
+    description: 'Their stunning coat ranges from shimmering Silver-Gray of moonlight to deep Mouse-Gray and Blue hues, each variation equally captivating.',
+  },
+  {
+    eyebrow: 'Ridge Back',
+    title: 'Mohawk ridge variation',
+    description: 'Some Weimaraners sport a rebellious ridge down their spines, giving a playful nod to their distinctive personality and adding to their unique charm.',
+  },
+  {
+    eyebrow: 'Tail Styles',
+    title: 'Full or docked tails',
+    description: 'Whether wagging a regal full tail or a traditional docked tail, each variation adds to the breed\'s timeless elegance and individual character.',
+  },
+];
+
 export const trainingGuides: SpotlightCard[] = [
   {
     eyebrow: 'Foundation',
