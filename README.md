@@ -4,13 +4,14 @@ WeimWisdom is a sleek, accessible, mobile-ready Next.js static site for Weimaran
 
 ## Features
 
-- 🐕 **Comprehensive Breed Information**: Detailed Weimaraner characteristics, temperament, and care essentials
+- 🐕 **Comprehensive Breed Information**: Detailed Weimaraner characteristics, temperament, care essentials, and breed variants
 - 🎓 **Training Resources**: Professional training tips and YouTube community
 - 🏃 **Activities**: Exercise recommendations and purpose-driven work ideas for high-energy Weimaraners
 - 👪 **Adoption Guidance**: Complete adoption process, preparation guides, and rescue resources
+- 📝 **Blog Platform**: Markdown-based blog with featured images, custom ordering, and dynamic routing
 - ♿ **Fully Accessible**: WCAG compliant with comprehensive accessibility testing (100% pass rate)
-- 📱 **Mobile-First Design**: Responsive typography optimized for iPhone and all screen sizes
-- 🎨 **Modern UI**: Clean, professional design with Material-UI components
+- 📱 **Mobile-First Design**: Responsive typography and images optimized for all screen sizes
+- 🎨 **Modern UI**: Clean, professional design with Material-UI v7 components
 - 🔒 **HTTPS Ready**: Automatic SSL redirect configured via .htaccess
 - 🚀 **Static Export**: Fully static HTML for fast loading and reliable hosting
 
@@ -18,6 +19,8 @@ WeimWisdom is a sleek, accessible, mobile-ready Next.js static site for Weimaran
 
 - **Framework**: Next.js 14.2.35 with TypeScript and Static Export
 - **UI Library**: Material-UI (MUI) v7.0.1
+- **Content**: Markdown blog posts with gray-matter 4.0.3 for frontmatter parsing
+- **Markdown Rendering**: react-markdown 9.0.1 with remark-gfm 4.0.0 for GitHub Flavored Markdown
 - **Testing**: Jest 30.0.2, React Testing Library 16.1.0, Playwright 1.53.0
 - **Accessibility**: jest-axe 9.0.2 for automated WCAG compliance testing
 - **Linting**: ESLint with Next.js configuration
@@ -26,8 +29,12 @@ WeimWisdom is a sleek, accessible, mobile-ready Next.js static site for Weimaran
 ## Project Structure
 
 ```
+content/
+└── blog/            # Markdown blog posts
+    ├── welcome-to-weim-wisdom.md
+    └── the-gray-ghost-chronicles.md
 src/
-├── components/       # Reusable UI components
+├── components/      # Reusable UI components
 │   ├── GalleryGrid.tsx
 │   ├── HeroSection.tsx
 │   ├── PageHero.tsx
@@ -39,14 +46,19 @@ src/
 │   └── SpotlightGrid.tsx
 ├── data/            # Content and configuration
 │   └── siteContent.ts
+├── lib/             # Utility functions
+│   └── blog.ts      # Blog post utilities (getPostBySlug, getAllPosts)
 ├── pages/           # Next.js pages/routes
 │   ├── _app.tsx
 │   ├── _document.tsx
 │   ├── index.tsx
 │   ├── breed-info.tsx
 │   ├── training.tsx
-│   ├── activities.tsx   # Combined Activities & Jobs page
-│   └── adoption.tsx     # Combined Adoption & Rescue page
+│   ├── activities.tsx
+│   ├── adoption.tsx
+│   ├── blog.tsx     # Blog listing page
+│   └── blog/
+│       └── [slug].tsx  # Dynamic blog post pages
 ├── styles/          # Global styles
 │   └── globals.css
 └── theme/           # MUI theme configuration
@@ -107,7 +119,8 @@ This command:
 3. Creates `.htaccess` file with URL rewriting and HTTPS redirect
 
 **Output includes:**
-- 6 pre-rendered HTML pages (index, breed-info, training, activities, adoption, 404)
+- 7 main HTML pages (index, breed-info, training, activities, adoption, blog, 404)
+- Dynamic blog post pages (generated from markdown files in content/blog/)
 - Optimized static assets in `_next/` directory
 - Image assets in `images/` folder
 - `.htaccess` configuration for Apache server
@@ -170,9 +183,100 @@ npx serve@latest build/production -p 3000
 
 Visit `http://localhost:3000` to test the production build.
 
-## Recent Updates
+## Blog System
 
-### March 2026 - Production Optimization & Mobile Enhancements
+### Creating Blog Posts
+
+Blog posts are markdown files stored in `content/blog/` directory. Each post requires YAML frontmatter with metadata.
+
+**Create a new post:**
+
+1. **Create markdown file:**
+   ```bash
+   touch content/blog/my-new-post.md
+   ```
+
+2. **Add frontmatter and content:**
+   ```markdown
+   ---
+   title: "My Post Title"
+   date: "2026-03-27"
+   author: "Author Name"
+   excerpt: "Short description for the listing page"
+   order: 3
+   image: "/images/my-featured-image.jpg"
+   ---
+
+   # Main Content
+
+   Your markdown content here with **bold**, *italic*, and more.
+   ```
+
+3. **Required fields:**
+   - `title`: Post title (string)
+   - `date`: Publication date in YYYY-MM-DD format (parsed as local timezone)
+   - `author`: Author name (string)
+   - `excerpt`: Brief description (string)
+
+4. **Optional fields:**
+   - `order`: Numeric value for custom sorting (lower numbers appear first, posts without order are sorted by date)
+   - `image`: Path to featured image (displays in card thumbnail and post hero)
+
+### Blog Features
+
+- **Markdown Rendering**: Full GitHub Flavored Markdown support (tables, strikethrough, task lists, autolinks)
+- **Featured Images**: Responsive images in listing cards and post headers with `objectFit: 'contain'`
+- **Custom Ordering**: Control post sequence with `order` field, fallback to date sorting
+- **Dynamic Routes**: Each post gets its own URL (`/blog/post-slug`)
+- **Breadcrumbs**: Navigation path showing Home → Blog → Post Title
+- **Responsive Design**: Mobile-optimized typography and images with breakpoint scaling
+- **Static Generation**: All blog pages pre-rendered at build time for fast loading
+
+### Blog URL Structure
+
+- Listing page: `/blog` or `/blog.html`
+- Individual posts: `/blog/post-slug` or `/blog/post-slug.html`
+- URL slugs generated from markdown filename (e.g., `welcome-to-weim-wisdom.md` → `/blog/welcome-to-weim-wisdom`)
+
+
+
+### March 2026 - Blog Platform & Enhanced Features
+
+#### Blog Implementation
+- ✅ **Markdown-Based Blog**: Implemented full blog platform using markdown files with YAML frontmatter
+- ✅ **Featured Images**: Added image support for blog posts with responsive display in cards and hero sections
+- ✅ **Custom Post Ordering**: Implemented `order` field in frontmatter for manual post sequencing
+- ✅ **Dynamic Routing**: Created `/blog/[slug]` route for individual blog posts with static generation
+- ✅ **Blog Listing Page**: Grid layout showing post cards with images, excerpts, dates, and authors
+- ✅ **GitHub Flavored Markdown**: Full markdown rendering with remark-gfm for tables, strikethrough, task lists
+- ✅ **Date Handling**: Fixed timezone issues with local date parsing for accurate display
+- ✅ **Breadcrumb Navigation**: Added breadcrumbs to blog posts for improved UX
+- ✅ **Renamed Blog**: Changed from "Blog" to "Wondering Weim Blog" for branding consistency
+
+#### Blog Post Features
+Each blog post supports:
+- `title`: Post title
+- `date`: Publication date (YYYY-MM-DD format, parsed as local time)
+- `author`: Author name
+- `excerpt`: Short description for listing page
+- `order`: Optional numeric ordering (lower numbers appear first)
+- `image`: Optional featured image path (displayed in cards and post header)
+
+Example frontmatter:
+```yaml
+---
+title: "Welcome to WeimWisdom"
+date: "2026-03-27"
+author: "Weim Wisdom Team"
+excerpt: "Welcome to our new blog!"
+order: 1
+image: "/images/weim-logo.png"
+---
+```
+
+#### Breed Info Enhancements
+- ✅ **Weim Variants Section**: Added comprehensive section covering coat colors (Silver-Gray, Mouse-Gray, Blue), coat types (short-haired, long-haired), and tail variations
+- ✅ **Updated Page Flow**: Modified hero description to include variants section in logical order (history → variants → daily life → care)
 
 #### Mobile Typography Optimization
 - ✅ **Responsive Hero Section**: Reduced hero headline from 2.6rem to 2rem on mobile (xs breakpoint) to prevent text cutoff on iPhone 16
@@ -183,14 +287,14 @@ Visit `http://localhost:3000` to test the production build.
 - ✅ **Home Page Consistency**: Applied responsive sizing to "Continue at your own Risk" section
 
 #### Page Consolidation
-- ✅ **Removed Jobs Page**: Consolidated job content into Activities page (was separate earlier)
+- ✅ **Removed Jobs Page**: Consolidated job content into Activities page
 - ✅ **Removed Rescue Page**: Consolidated rescue resources into Adoption page
-- ✅ **Final Site Structure**: 5 main pages (Home, Breed Info, Training, Activities, Adoption) + 404 page
+- ✅ **Final Site Structure**: 6 main pages (Home, Breed Info, Training, Activities, Adoption, Blog) + 404 page
 
 #### Production Build Improvements
-- ✅ **Clean Build Process**: Implemented `rm -rf build/production && npm run build:siteground` to prevent duplicate files
-- ✅ **No Duplicates**: Eliminated macOS "file 2" and "file 3" artifacts from production builds
-- ✅ **Build Verification**: 40 total files, 6 HTML pages, 16 images in production folder
+- ✅ **Clean Build Process**: Implemented automated cleanup to prevent duplicate files
+- ✅ **No Duplicates**: Eliminated macOS artifacts from production builds
+- ✅ **Build Verification**: 52 total files including blog posts, images, and static assets
 
 #### Apache Configuration
 - ✅ **URL Rewriting**: Created .htaccess with RewriteEngine rules to serve .html files without extension
@@ -272,12 +376,13 @@ Example:
 
 ## Project Statistics
 
-- **Pages**: 5 main + 1 error page (6 total HTML files)
+- **Pages**: 6 main pages + blog listing + dynamic blog posts + 1 error page
+- **Blog Posts**: 2 published posts (welcome-to-weim-wisdom, the-gray-ghost-chronicles)
 - **Components**: 9 reusable React components
-- **Images**: 16 optimized assets
+- **Images**: 17 optimized assets (including blog featured images)
 - **Tests**: 12 unit/integration + 2 E2E tests
 - **Test Coverage**: 100% pass rate on all accessibility and functionality tests
-- **Production Build**: ~40 files total (HTML, JS chunks, CSS, images, config)
+- **Production Build**: ~52 files total (HTML, JS chunks, CSS, images, blog content, config)
 
 ## License
 
