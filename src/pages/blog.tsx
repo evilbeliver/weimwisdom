@@ -31,12 +31,12 @@ function formatDate(dateString: string): string {
 export default function BlogPage({ posts }: BlogPageProps) {
   return (
     <SiteLayout
-      title="Wondering Weim Blog | Weim Wisdom"
+      title="WeimWisdom Blog | Weim Wisdom"
       description="Stories, tips, and insights about life with Weimaraners"
     >
 
       <PageHero
-        title="Wondering Weim Blog"
+        title="WeimWisdom Blog"
         description="Stories, tips, and insights from the Weimaraner community"
       />
 
