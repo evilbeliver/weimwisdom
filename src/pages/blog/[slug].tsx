@@ -23,7 +23,7 @@ function formatDate(dateString: string): string {
 
 export default function BlogPostPage({ post }: BlogPostPageProps) {
   return (
-    <SiteLayout title={`${post.title} | Wondering Weim Blog`} description={post.excerpt}>
+    <SiteLayout title={`${post.title} | WeimWisdom Blog`} description={post.excerpt}>
 
       <Container maxWidth="md">
         <Box sx={{ py: { xs: 4, sm: 6, md: 8 } }}>
@@ -33,7 +33,7 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
               Home
             </Link>
             <Link href="/blog" style={{ textDecoration: 'none', color: 'inherit' }}>
-              Wondering Weim Blog
+              WeimWisdom Blog
             </Link>
             <Typography color="text.primary">{post.title}</Typography>
           </Breadcrumbs>

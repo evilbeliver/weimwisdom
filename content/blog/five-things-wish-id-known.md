@@ -1,8 +1,8 @@
 ---
-title: "5 things I wish I'd known before getting a Weimaraner"
+title: "The Gray Ghost Chronicles: 20 Years of Love, Chaos, and “A..Hats”"
 date: "2026-03-25"
-author: "Mike Thompson"
-excerpt: "Thinking about getting a Weimaraner? Here's what this first-time Weim owner wishes someone had told him before taking the plunge."
+author: "Dave Cristinzio"
+excerpt: "Welcome to my first post! If you’ve ever owned a Weimaraner, you know they aren’t just dogs—they are lifestyle choices. This blog is dedicated to my past, present, and future adventures with these gray beasts. I’ll probably refer to them as a..hats from time to time… don’t judge me; if you’ve lived with them for 25+ years like I have, you know they’ve earned the title."
 ---
 
 # 5 things I wish I'd known before getting a Weimaraner
