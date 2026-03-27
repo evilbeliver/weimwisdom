@@ -21,7 +21,7 @@ export default function TrainingPage() {
       <SectionBlock
         title="Training Guides that fit the breed"
         description={[
-          `Each guide focuses on practical structure: impulse control, recall, and mental workouts that support emotional balance.`,
+          
           `To keep these silvery masterminds from staging a coup, you'll need a training guide specifically designed for a breed that's half-ghost and half-genius. Since they possess the patience of a hungry raptor, impulse control is a must—teaching them that the world doesn't actually revolve around their every whim (even if they have the paperwork to prove it).`,
           `A rock-solid recall is your secret weapon for those high-speed outdoor adventures, ensuring they return to your side instead of vanishing like a phantom into the woods. Most importantly, don't forget the mental workouts! Without a constant stream of puzzles and challenges to tire out that busy brain, they will quickly find their own "hobbies"—like redecorating your living room or "borrowing" your car keys. Keep them guessing, and you might just stay one step ahead of your clever gray shadow.`
         ]}
