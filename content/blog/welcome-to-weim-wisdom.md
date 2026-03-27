@@ -4,6 +4,7 @@ date: "2026-03-27"
 author: "Weim Wisdom Team"
 excerpt: "Welcome to our new blog! We're excited to share stories, tips, and insights about life with these incredible gray ghosts."
 order: 1
+image: "/images/weim-logo.png"
 ---
 
 # Welcome to WeimWisdom

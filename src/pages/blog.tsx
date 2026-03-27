@@ -76,11 +76,14 @@ export default function BlogPage({ posts }: BlogPageProps) {
                       {post.image && (
                         <CardMedia
                           component="img"
-                          height="240"
                           image={post.image}
                           alt={post.title}
                           sx={{
-                            objectFit: 'cover',
+                            width: '100%',
+                            height: 'auto',
+                            maxHeight: 300,
+                            objectFit: 'contain',
+                            backgroundColor: '#f5f5f5',
                           }}
                         />
                       )}
