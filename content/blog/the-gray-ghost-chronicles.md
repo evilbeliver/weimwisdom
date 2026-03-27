@@ -3,8 +3,8 @@ title: "The Gray Ghost Chronicles: 25+ Years of Love, Chaos, and “A..Hats”"
 date: "2026-03-27"
 author: "Dave Cristinzio"
 excerpt: "Welcome to the WeimWisdom Blog! If you’ve ever owned a Weimaraner, you know they aren’t just dogs—they are lifestyle choices. This blog is dedicated to my past, present, and future adventures with these gray beasts."
+order: 2
 ---
-
 # Welcome to the first of many posts 
 
 Who am I.. no one really, just someone with a passion for punishiment and a lot of lived expereriences I guess, as it comes with the love of this breed! I created this site and blog to give back more to the Weim community and help others with these beutiful heathens. You'll probably see me refer to them as a..hats from time to time… don’t judge me; if you’ve lived with them for 25+ years like I have, you know they’ve earned the title. So follow along if you would like on our journies"

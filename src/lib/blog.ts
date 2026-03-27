@@ -11,6 +11,7 @@ export interface BlogPost {
   author: string;
   excerpt: string;
   content: string;
+  order: number | null;
 }
 
 export interface BlogPostMeta {
@@ -19,6 +20,7 @@ export interface BlogPostMeta {
   date: string;
   author: string;
   excerpt: string;
+  order: number | null;
 }
 
 /**
@@ -54,6 +56,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
       author: data.author || '',
       excerpt: data.excerpt || '',
       content,
+      order: data.order ?? null,
     };
   } catch (error) {
     console.error(`Error reading post ${slug}:`, error);
@@ -62,7 +65,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
 }
 
 /**
- * Get all blog posts, sorted by date (newest first)
+ * Get all blog posts, sorted by order then date
  */
 export function getAllPosts(): BlogPostMeta[] {
   const slugs = getPostSlugs();
@@ -72,17 +75,26 @@ export function getAllPosts(): BlogPostMeta[] {
       if (!post) return null;
       
       // Return only metadata for listing page
-      return {
+      const meta: BlogPostMeta = {
         slug: post.slug,
         title: post.title,
         date: post.date,
         author: post.author,
         excerpt: post.excerpt,
+        order: post.order ?? null,
       };
+      return meta;
     })
     .filter((post): post is BlogPostMeta => post !== null)
     .sort((a, b) => {
-      // Sort by date, newest first
+      // Sort by order first (if present), then by date
+      if (a.order !== null && b.order !== null) {
+        return a.order - b.order;
+      }
+      if (a.order !== null) return -1;
+      if (b.order !== null) return 1;
+      
+      // Fall back to date sorting (newest first)
       return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
 
