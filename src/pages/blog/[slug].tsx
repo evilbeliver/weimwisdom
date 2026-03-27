@@ -77,17 +77,23 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
                 borderRadius: 3,
                 overflow: 'hidden',
                 boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-                position: 'relative',
                 width: '100%',
-                aspectRatio: '16 / 9',
+                display: 'flex',
+                justifyContent: 'center',
+                backgroundColor: '#f5f5f5',
+                maxHeight: { xs: 300, sm: 400, md: 500 },
               }}
             >
               <Image
                 src={post.image}
                 alt={post.title}
-                fill
+                width={800}
+                height={500}
                 style={{
-                  objectFit: 'cover',
+                  width: '100%',
+                  height: 'auto',
+                  maxHeight: '100%',
+                  objectFit: 'contain',
                 }}
                 priority
               />

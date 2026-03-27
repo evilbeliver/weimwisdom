@@ -23,7 +23,7 @@ Tanna was a project—she survived two rounds of heartworm treatment, which is n
 ## 3. Belle: Enter the "Raptor"
 
 Seeing Tanna’s heartbreak after Sandy passed broke us. A few months later, we went to look at a puppy. We didn’t pick Belle; she picked us by deciding to eat my daughter’s hair.
-Tanna wasn't thrilled about the "little raptor" at first, but they spent a year and a half together before Tanna passed at age 14. Belle eventually became the matriarch of our family—our "Dr. Penguin" (shoutout to the American Dad fans). Losing her in September 2023 was a hit that leveled me. I couldn’t even look at another Weim without crying.
+Tanna wasn't thrilled about the "little raptor" at first, but they spent a year and a half together before Tanna passed at age 14. Belle eventually became the matriarch of our family—our "Dr. Penguin" (shoutout to the American Dad fans). Losing her in September 2023 was a hit that leveled me. I couldn’t even look at another Weim without crying including Loki at the time.
 
 ## 4. Loki and Paige: The Current Crew
 
