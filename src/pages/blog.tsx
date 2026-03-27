@@ -8,6 +8,7 @@ import {
   Card,
   CardContent,
   CardActionArea,
+  CardMedia,
   Grid,
 } from '@mui/material';
 import { SiteLayout } from '@/components/SiteLayout';
@@ -72,6 +73,17 @@ export default function BlogPage({ posts }: BlogPageProps) {
                         alignItems: 'stretch',
                       }}
                     >
+                      {post.image && (
+                        <CardMedia
+                          component="img"
+                          height="240"
+                          image={post.image}
+                          alt={post.title}
+                          sx={{
+                            objectFit: 'cover',
+                          }}
+                        />
+                      )}
                       <CardContent sx={{ flexGrow: 1 }}>
                         <Typography
                           variant="h5"

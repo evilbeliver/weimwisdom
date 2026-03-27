@@ -12,6 +12,7 @@ export interface BlogPost {
   excerpt: string;
   content: string;
   order: number | null;
+  image: string | null;
 }
 
 export interface BlogPostMeta {
@@ -21,6 +22,7 @@ export interface BlogPostMeta {
   author: string;
   excerpt: string;
   order: number | null;
+  image: string | null;
 }
 
 /**
@@ -57,6 +59,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
       excerpt: data.excerpt || '',
       content,
       order: data.order ?? null,
+      image: data.image ?? null,
     };
   } catch (error) {
     console.error(`Error reading post ${slug}:`, error);
@@ -82,6 +85,7 @@ export function getAllPosts(): BlogPostMeta[] {
         author: post.author,
         excerpt: post.excerpt,
         order: post.order ?? null,
+        image: post.image ?? null,
       };
       return meta;
     })

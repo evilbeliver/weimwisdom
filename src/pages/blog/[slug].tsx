@@ -1,6 +1,7 @@
 import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Box, Container, Typography, Breadcrumbs } from '@mui/material';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -67,6 +68,31 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
               <Typography variant="body1">{post.author}</Typography>
             </Box>
           </Box>
+
+          {/* Featured Image */}
+          {post.image && (
+            <Box
+              sx={{
+                mb: 4,
+                borderRadius: 3,
+                overflow: 'hidden',
+                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+                position: 'relative',
+                width: '100%',
+                aspectRatio: '16 / 9',
+              }}
+            >
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                style={{
+                  objectFit: 'cover',
+                }}
+                priority
+              />
+            </Box>
+          )}
 
           {/* Post Content */}
           <Box
