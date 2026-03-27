@@ -1,5 +1,5 @@
 ---
-title: "The Gray Ghost Chronicles: 20 Years of Love, Chaos, and “A..Hats”"
+title: "The Gray Ghost Chronicles: 25+ Years of Love, Chaos, and “A..Hats”"
 date: "2026-03-27"
 author: "Dave Cristinzio"
 excerpt: "Welcome to the WeimWisdom Blog! If you’ve ever owned a Weimaraner, you know they aren’t just dogs—they are lifestyle choices. This blog is dedicated to my past, present, and future adventures with these gray beasts."
