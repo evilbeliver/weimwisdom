@@ -10,7 +10,7 @@ export default function BreedInfoPage() {
     <SiteLayout title="Breed Info | WeimWisdom" description="History, temperament, and care guidance for Weimaraners.">
       <PageHero
         title="Breed info that balances beauty, history, and practical care"
-        description="The Weim Life: what the breed was built for, what daily life looks like, and how to support a happy, fulfilled Weimaraner."
+        description="The Weim Life: what the breed was built for, their stunning variants, what daily life looks like, and how to support a happy, fulfilled Weimaraner."
       />
       <SectionBlock
         title="History and temperament"
