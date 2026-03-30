@@ -1,8 +1,18 @@
-import { Box, Container, Link as MuiLink, Stack, Typography } from '@mui/material';
+import { Box, Container, Link as MuiLink, Stack, Typography, IconButton } from '@mui/material';
 import Link from 'next/link';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import { navLinks } from '@/data/siteContent';
 
 export function SiteFooter() {
+  const socialLinks = [
+    {
+      name: 'Facebook',
+      url: 'https://www.facebook.com/profile.php?id=61574378210667',
+      icon: FacebookIcon,
+      ariaLabel: 'Visit WeimWisdom on Facebook',
+    },
+  ];
+
   return (
     <Box component="footer" sx={{ bgcolor: 'primary.dark', color: 'white', mt: 8, py: 6 }}>
       <Container maxWidth="lg">
@@ -21,6 +31,34 @@ export function SiteFooter() {
               <Typography component="p" sx={{ opacity: 0.82 }}>
                 Breed facts, activities & jobs, training plans, and adoption guidance for life with your gray ghost.
               </Typography>
+              <Box sx={{ mt: 2 }}>
+                <Typography component="p" variant="overline" sx={{ opacity: 0.7, mb: 1, display: 'block' }}>
+                  Follow Us
+                </Typography>
+                <Stack direction="row" spacing={1}>
+                  {socialLinks.map((social) => {
+                    const Icon = social.icon;
+                    return (
+                      <IconButton
+                        key={social.name}
+                        component="a"
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={social.ariaLabel}
+                        sx={{
+                          color: 'white',
+                          '&:hover': {
+                            bgcolor: 'rgba(255, 255, 255, 0.1)',
+                          },
+                        }}
+                      >
+                        <Icon />
+                      </IconButton>
+                    );
+                  })}
+                </Stack>
+              </Box>
             </Stack>
           </Box>
           <Box>
