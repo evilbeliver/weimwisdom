@@ -3,7 +3,7 @@ title: "The Divas of the Backyard: Life at the Weimaraner Wellness Resort"
 date: "2026-03-29"
 author: "Dave Cristinzio"
 excerpt: "With a brand-new deck finally installed, I've been spending the last few days helping the duo get acclimated to their upgraded kingdom. My goal was comfort. Their goal? Full-blown luxury."
-order: null
+order: 3
 image: "/images/weim-life.jpg"
 ---
 
