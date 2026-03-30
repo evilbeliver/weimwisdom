@@ -7,13 +7,13 @@ order: 4
 image: "/images/weim-place.jpg"
 ---
 
-With the temperatures climbing here in the south, I traded our usual walk for a backyard training session. Since we’ve shifted to training Paige and Loki together, I’ve been using a lot of "Place" bed work. My goal? Solidifying individual commands by name so I can actually control the chaos when both are in the mix.
+With the temperatures climbing here in the south, I traded our usual walk for a backyard training session. Since I've shifted to training Paige and Loki together, I’ve been using a lot of "Place" bed work. My goal? Solidifying individual commands by name so I can actually control the chaos when both are in the mix.
 
-We have been working on this for a few weeks now indoors, and now I had them both on their mats on the deck while I headed down the stairs. The challenge: individual releases with outdoor distractions (birds, squirrels, butterflies, heck a blade of grass looking at Loki wrong..).
+We have been working on this for a few weeks indoors with normal distractions, and now I had them both on their beds on the deck while I headed down the stairs. The challenge: individual releases with outdoor distractions (birds, squirrels, butterflies, heck a blade of grass looking at Loki wrong..).
 
 ## The Wow Moment:
 
-On this day, they nailed it. I released Paige, sent her back to "Place," and she ran right up the stairs to her “Place” bed. Loki stayed glued to my side until I gave him the green light. "Loki, OK! Place!" and off he went, charging up the stairs.
+On this day, they nailed it. I released both of them individually from their Place beds and they each met me down in the back yard and presented me a perfice sit! I then released Paige, sent her back to "Place," and she ran right up the stairs to her “Place” bed. Loki stayed glued to my side until I gave him the green light. "Loki, OK! Place!" and off he went, charging up the stairs.
 
 ## The "Oops" (or the Win?):
 
