@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "build:siteground": "npm run build && node scripts/prepare-siteground.mjs",
+    "build": "next build --experimental-build-mode compile",
+    "build:siteground": "cp next.config.production.mjs next.config.mjs && npm run build && node scripts/prepare-siteground.mjs && git checkout next.config.mjs",
     "start": "next start",
     "lint": "next lint",
     "test": "jest --runInBand",
