@@ -14,6 +14,9 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Handle /blog/ directory - redirect to blog.html
+RewriteRule ^blog/$ /blog.html [L]
+
 # If the requested file exists, serve it directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
