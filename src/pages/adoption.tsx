@@ -25,11 +25,12 @@ export default function AdoptionPage() {
       <Box sx={{ mt: { xs: -2, sm: -3, md: -6 } }}>
         <SectionBlock
           title="Adoptable Weimaraners"
+          description=""
           hasContent
           fallback={fallbackMessage}
         >
         <Typography component="p" variant="body1" color="text.primary" sx={{ mb: 2 }}>
-          While our live listings pull from many groups, we are proud to highlight these dedicated organizations. Beyond adoption, these rescues rely on the community for donations, event participation, and volunteering to keep their missions alive. If you don't see your perfect match in the feed, please visit our friends to see how you can help or get involved in your local area:
+          While our live listings pull from many groups, we are proud to highlight these dedicated organizations. Beyond adoption, these rescues rely on the community for donations, event participation, and volunteering to keep their missions alive. If you don&apos;t see your perfect match in the feed, please visit our friends to see how you can help or get involved in your local area:
         </Typography>
         
         <Box component="ul" sx={{ pl: 3, mb: 3 }}>
@@ -38,7 +39,7 @@ export default function AdoptionPage() {
               <Typography component="a" href="https://weimfriends.com/" target="_blank" rel="noopener noreferrer" sx={{ color: 'primary.main', textDecoration: 'none', fontWeight: 600, '&:hover': { textDecoration: 'underline' } }}>
                 Weim Friends Rescue
               </Typography>
-              {' – Based in Cincinnati, Ohio, they are amazing at finding forever homes for "grey ghosts" in the Midwest.'}
+              {' – Based in Cincinnati, Ohio, they are amazing at finding forever homes for &ldquo;grey ghosts&rdquo; in the Midwest.'}
             </Typography>
             <Box component="ul" sx={{ pl: 3, mt: 1 }}>
               <Box component="li" sx={{ mb: 1 }}>
@@ -89,7 +90,7 @@ export default function AdoptionPage() {
                   <Typography component="a" href="https://www.tarheelweimrescue.org/volunteer" target="_blank" rel="noopener noreferrer" sx={{ color: 'primary.main', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
                     volunteers
                   </Typography>
-                  {' for fostering, transport ("dog taxis"), and administrative support across the Southeast.'}
+                  {' for fostering, transport (&ldquo;dog taxis&rdquo;), and administrative support across the Southeast.'}
                 </Typography>
               </Box>
             </Box>
@@ -97,15 +98,15 @@ export default function AdoptionPage() {
         </Box>
 
         <Typography component="p" variant="body1" color="text.primary" sx={{ mb: 2, fontWeight: 600 }}>
-          Visit their websites to find specific opportunities near you and help these "silver shadows" find their way home!
+          Visit their websites to find specific opportunities near you and help these &ldquo;silver shadows&rdquo; find their way home!
         </Typography>
 
         <Typography component="p" variant="body1" color="text.primary" sx={{ mb: 2 }}>
-          Imagine a spirited, long-legged explorer bounding into your life, ready to transform your world into a whirlwind of joy! To keep these energetic souls happy, a vast, securely fenced kingdom is ideal for their zoomies; however, they can adapt to a cozy apartment life as long as they get plenty of exhilarating, off-leash adventures to tire out those tireless paws. While they are incredibly tender-hearted with tiny humans, their "bull-in-a-china-shop" enthusiasm means they might accidentally tumble a toddler during play, and their keen eyes are always on the lookout for a "chase," so smaller furry friends should be introduced with extra care.
+          Imagine a spirited, long-legged explorer bounding into your life, ready to transform your world into a whirlwind of joy! To keep these energetic souls happy, a vast, securely fenced kingdom is ideal for their zoomies; however, they can adapt to a cozy apartment life as long as they get plenty of exhilarating, off-leash adventures to tire out those tireless paws. While they are incredibly tender-hearted with tiny humans, their &ldquo;bull-in-a-china-shop&rdquo; enthusiasm means they might accidentally tumble a toddler during play, and their keen eyes are always on the lookout for a &ldquo;chase,&rdquo; so smaller furry friends should be introduced with extra care.
         </Typography>
 
         <Typography component="p" variant="body1" color="text.primary" sx={{ mb: 3 }}>
-          To help your new companion settle into this fairytale, follow the magical 3-3-3 rule: <strong>The First 3 Days:</strong> This is the "hibernation" phase. Your pup may feel overwhelmed or shy, so give them a quiet space to decompress and realize they are finally safe. <strong>The First 3 Weeks:</strong> The "learning the ropes" phase. As their true personality begins to peek through, they'll start to figure out your daily rhythm, from breakfast time to the best spot on the rug. <strong>The First 3 Months:</strong> The "happily ever after" phase. By now, the bond is sealed; they fully trust their environment, feel a true sense of belonging, and realize they aren't just visiting—they are finally home.
+          To help your new companion settle into this fairytale, follow the magical 3-3-3 rule: <strong>The First 3 Days:</strong> This is the &ldquo;hibernation&rdquo; phase. Your pup may feel overwhelmed or shy, so give them a quiet space to decompress and realize they are finally safe. <strong>The First 3 Weeks:</strong> The &ldquo;learning the ropes&rdquo; phase. As their true personality begins to peek through, they&apos;ll start to figure out your daily rhythm, from breakfast time to the best spot on the rug. <strong>The First 3 Months:</strong> The &ldquo;happily ever after&rdquo; phase. By now, the bond is sealed; they fully trust their environment, feel a true sense of belonging, and realize they aren&apos;t just visiting—they are finally home.
         </Typography>
 
         <Box sx={{ border: '1px solid', borderColor: 'divider', borderRadius: 4, p: { xs: 2, md: 3 }, bgcolor: 'background.paper' }}>
