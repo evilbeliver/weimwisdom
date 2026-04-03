@@ -39,7 +39,7 @@ export default function AdoptionPage() {
               <Typography component="a" href="https://weimfriends.com/" target="_blank" rel="noopener noreferrer" sx={{ color: 'primary.main', textDecoration: 'none', fontWeight: 600, '&:hover': { textDecoration: 'underline' } }}>
                 Weim Friends Rescue
               </Typography>
-              {' – Based in Cincinnati, Ohio, they are amazing at finding forever homes for grey ghosts in the Midwest.'}
+              {' – Based in Cincinnati, Ohio, they are amazing at finding forever homes for Gray Ghosts in the Midwest.'}
             </Typography>
             <Box component="ul" sx={{ pl: 3, mt: 1 }}>
               <Box component="li" sx={{ mb: 1 }}>
