@@ -39,7 +39,7 @@ export default function AdoptionPage() {
               <Typography component="a" href="https://weimfriends.com/" target="_blank" rel="noopener noreferrer" sx={{ color: 'primary.main', textDecoration: 'none', fontWeight: 600, '&:hover': { textDecoration: 'underline' } }}>
                 Weim Friends Rescue
               </Typography>
-              {' – Based in Cincinnati, Ohio, they are amazing at finding forever homes for &ldquo;grey ghosts&rdquo; in the Midwest.'}
+              {' – Based in Cincinnati, Ohio, they are amazing at finding forever homes for grey ghosts in the Midwest.'}
             </Typography>
             <Box component="ul" sx={{ pl: 3, mt: 1 }}>
               <Box component="li" sx={{ mb: 1 }}>
@@ -90,7 +90,7 @@ export default function AdoptionPage() {
                   <Typography component="a" href="https://www.tarheelweimrescue.org/volunteer" target="_blank" rel="noopener noreferrer" sx={{ color: 'primary.main', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
                     volunteers
                   </Typography>
-                  {' for fostering, transport (&ldquo;dog taxis&rdquo;), and administrative support across the Southeast.'}
+                  {' for fostering, transport (dog taxis), and administrative support across the Southeast.'}
                 </Typography>
               </Box>
             </Box>
@@ -98,11 +98,11 @@ export default function AdoptionPage() {
         </Box>
 
         <Typography component="p" variant="body1" color="text.primary" sx={{ mb: 2, fontWeight: 600 }}>
-          Visit their websites to find specific opportunities near you and help these &ldquo;silver shadows&rdquo; find their way home!
+          Visit their websites to find specific opportunities near you and help these silver shadows find their way home!
         </Typography>
 
         <Typography component="p" variant="body1" color="text.primary" sx={{ mb: 2 }}>
-          Imagine a spirited, long-legged explorer bounding into your life, ready to transform your world into a whirlwind of joy! To keep these energetic souls happy, a vast, securely fenced kingdom is ideal for their zoomies; however, they can adapt to a cozy apartment life as long as they get plenty of exhilarating, off-leash adventures to tire out those tireless paws. While they are incredibly tender-hearted with tiny humans, their &ldquo;bull-in-a-china-shop&rdquo; enthusiasm means they might accidentally tumble a toddler during play, and their keen eyes are always on the lookout for a &ldquo;chase,&rdquo; so smaller furry friends should be introduced with extra care.
+          Imagine a spirited, long-legged explorer bounding into your life, ready to transform your world into a whirlwind of joy! To keep these energetic souls happy, a vast, securely fenced kingdom is ideal for their zoomies; however, they can adapt to a cozy apartment life as long as they get plenty of exhilarating, off-leash adventures to tire out those tireless paws. While they are incredibly tender-hearted with tiny humans, their bull-in-a-china-shop enthusiasm means they might accidentally tumble a toddler during play, and their keen eyes are always on the lookout for a chase, so smaller furry friends should be introduced with extra care.
         </Typography>
 
         <Typography component="p" variant="body1" color="text.primary" sx={{ mb: 3 }}>
