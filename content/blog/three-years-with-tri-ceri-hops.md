@@ -21,7 +21,7 @@ The vet took one look and the air left the room. The X-ray was haunting—cancer
 
 ## Rolling the Dice
 
-We were devastated. We had not were not prepared for this news, and the options felt like a "choose your own adventure" book where every ending was sad: chemo, amputation, or ending his suffering entirely.
+We were devastated. We were not prepared for this news, and the options felt like a "choose your own adventure" book where every ending was sad: chemo, amputation, or ending his suffering entirely.
 
 After a lot of research, and late-night talks, we decided to take a gamble. We rolled the 20-sided die and opted for amputation. The vet warned us: this could be like cutting the head off a Hydra. If the cancer decided to come back with a vengeance which is common it will show up in his lungs, and we'd be out of options.
 
