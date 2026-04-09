@@ -8,7 +8,7 @@ WeimWisdom is a sleek, accessible, mobile-ready Next.js static site for Weimaran
 - 🎓 **Training Resources**: Professional training tips and YouTube community
 - 🏃 **Activities**: Exercise recommendations and purpose-driven work ideas for high-energy Weimaraners
 - 👪 **Adoption Guidance**: Complete adoption process, preparation guides, rescue resources, and live Petfinder integration
-- 📝 **Blog Platform**: Markdown-based blog with featured images, custom ordering, and dynamic routing (6 published posts)
+- 📝 **Blog Platform**: Markdown-based blog with featured images, custom ordering, and dynamic routing (8 published posts)
 - 🐾 **Live Adoptable Pet Listings**: Integrated Petfinder widget displaying real-time adoptable Weimaraners from rescue partners
 - 🤝 **Rescue Partnerships**: Featured rescues with donation links, volunteer opportunities, and event calendars
 - ♿ **Fully Accessible**: WCAG compliant with comprehensive accessibility testing (100% pass rate)
@@ -36,9 +36,11 @@ content/
     ├── welcome-to-weim-wisdom.md
     ├── the-gray-ghost-chronicles.md
     ├── divas-of-the-backyard.md
-    ├── losing-the-walkie-walkie-privileges.md
+    ├── training-oops-or-wow.md
     ├── the-morning-the-farm-girl-flipped-the-script.md
-    └── training-oops-or-wow.md
+    ├── losing-the-walkie-walkie-privileges.md
+    ├── weimaraner-shadow-demon.md
+    └── three-years-with-tri-ceri-hops.md
 src/
 ├── components/      # Reusable UI components
 │   ├── GalleryGrid.tsx
@@ -127,7 +129,7 @@ This command:
 **Output includes:**
 - 6 main HTML pages (index, breed-info, training, activities, adoption, blog)
 - 404 error page
-- 6 dynamic blog post pages (generated from markdown files in content/blog/)
+- 8 dynamic blog post pages (generated from markdown files in content/blog/)
 - Petfinder widget integration for live adoptable pet listings
 - Optimized static assets in `_next/` directory
 - Image assets in `images/` folder
@@ -248,6 +250,18 @@ Blog posts are markdown files stored in `content/blog/` directory. Each post req
 
 
 
+### April 2026 - New Blog Content & Production Testing
+
+#### New Blog Posts
+- ✅ **"From 3 Months to 3 Years: Our Resident Tri-Ceri-Hops"**: Heartwarming cancer survival story about Loki's journey from diagnosis through three years post-amputation
+- ✅ **"The Weimaraner Shadow Demon"**: Added as 7th blog post in the collection
+- ✅ **8 Published Blog Posts**: Expanded collection with personal stories of resilience, training, and breed experiences
+
+#### Production Build & Testing
+- ✅ **Static Server Testing**: Validated production builds using Python's http.server for pre-deployment testing
+- ✅ **Duplicate File Prevention**: Ensured clean builds with no duplicate files in production folder
+- ✅ **Build Process**: Streamlined `build:siteground` command with automated .htaccess generation
+
 ### March 2026 - Blog Platform & Enhanced Features
 
 #### Blog Implementation
@@ -260,7 +274,7 @@ Blog posts are markdown files stored in `content/blog/` directory. Each post req
 - ✅ **Date Handling**: Fixed timezone issues with local date parsing for accurate display
 - ✅ **Breadcrumb Navigation**: Added breadcrumbs to blog posts for improved UX
 - ✅ **Renamed Blog**: Changed from "Blog" to "Wondering Weim Blog" for branding consistency
-- ✅ **6 Published Blog Posts**: Complete collection covering training stories, breed insights, and owner experiences
+- ✅ **Initial Blog Posts**: Complete collection covering training stories, breed insights, and owner experiences
 
 #### Adoption Page Enhancements
 - ✅ **Petfinder Integration**: Live widget displaying real-time adoptable Weimaraners from rescue partners (AL48, NC26, GA544)
@@ -397,7 +411,7 @@ Example:
 ## Project Statistics
 
 - **Pages**: 6 main pages + blog listing + dynamic blog posts + 1 error page
-- **Blog Posts**: 6 published posts (welcome-to-weim-wisdom, the-gray-ghost-chronicles, divas-of-the-backyard, losing-the-walkie-walkie-privileges, the-morning-the-farm-girl-flipped-the-script, training-oops-or-wow)
+- **Blog Posts**: 8 published posts (welcome-to-weim-wisdom, the-gray-ghost-chronicles, divas-of-the-backyard, training-oops-or-wow, the-morning-the-farm-girl-flipped-the-script, losing-the-walkie-walkie-privileges, weimaraner-shadow-demon, three-years-with-tri-ceri-hops)
 - **Components**: 9 reusable React components
 - **Rescue Partners**: 2 featured organizations (Weim Friends Rescue, Tarheel Weimaraner Rescue)
 - **Live Integrations**: Petfinder API widget for real-time adoptable pet listings
