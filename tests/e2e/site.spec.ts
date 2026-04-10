@@ -18,4 +18,7 @@ test('secondary content pages render', async ({ page }) => {
 
   await page.goto('/adoption');
   await expect(page.getByRole('heading', { name: /adoption and readiness guidance/i })).toBeVisible();
+
+  await page.goto('/blog');
+  await expect(page.getByRole('heading', { name: /weimwisdom blog/i })).toBeVisible();
 });
