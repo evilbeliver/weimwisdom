@@ -142,9 +142,9 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
               },
               '& a': {
                 color: 'primary.main',
-                textDecoration: 'none',
+                textDecoration: 'underline',
                 '&:hover': {
-                  textDecoration: 'underline',
+                  color: 'primary.dark',
                 },
               },
               '& code': {
