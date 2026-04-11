@@ -7,7 +7,7 @@ order: 9
 image: "/images/weim-wcdl.jpg"
 ---
 
-We've all heard of the [3-3-3 rule](/adoption) for rehoming a dog. It's a lovely, organized guideline. But Paige? Paige doesn't do "guidelines." Paige operates on a proprietary temporal rift known as Weim-Time.
+We've all heard of the [3-3-3 rule](/adoption.html) for rehoming a dog. It's a lovely, organized guideline. But Paige? Paige doesn't do "guidelines." Paige operates on a proprietary temporal rift known as Weim-Time.
 
 When Paige first joined us, she wasn't exactly looking for a BFF. She trusted no one, viewed a leash as a personal insult (transforming instantly into a 90lb bucking bronco), and had exactly one method of communication: The Varied Chomp.
 
