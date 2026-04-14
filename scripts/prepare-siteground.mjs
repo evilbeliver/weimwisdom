@@ -1,4 +1,4 @@
-import { cp, mkdir, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdir, readdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const sourceDir = path.join(process.cwd(), 'out');
@@ -7,6 +7,21 @@ const targetDir = path.join(process.cwd(), 'build', 'production');
 await rm(targetDir, { recursive: true, force: true });
 await mkdir(targetDir, { recursive: true });
 await cp(sourceDir, targetDir, { recursive: true });
+
+// Clean up accidental duplicate names like "_next 2" or "images 3" on macOS.
+const targetEntries = await readdir(targetDir, { withFileTypes: true });
+const entryNames = new Set(targetEntries.map((entry) => entry.name));
+for (const entry of targetEntries) {
+	const duplicateMatch = entry.name.match(/^(.*)\s+(\d+)$/);
+	if (!duplicateMatch) {
+		continue;
+	}
+
+	const baseName = duplicateMatch[1];
+	if (entryNames.has(baseName)) {
+		await rm(path.join(targetDir, entry.name), { recursive: true, force: true });
+	}
+}
 
 // Create .htaccess file for Apache/SiteGround
 const htaccessContent = `# Force HTTPS
