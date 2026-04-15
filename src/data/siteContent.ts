@@ -107,16 +107,28 @@ export const breedInfoHistory: SpotlightCard[] = [
     eyebrow: 'Noble Origins',
     title: 'Exclusive hunting companion',
     description: 'Bred in 19th-century German courts for big game hunting, the Weimaraner was kept exclusive to aristocracy for decades.',
+    link: {
+      url: 'https://www.weimaranerclubofamerica.org/history.php',
+      label: 'Learn more at Weimaraner Club of America',
+    },
   },
   {
     eyebrow: 'Intelligence',
     title: 'The dog with a human brain',
     description: 'A sophisticated blend of Bloodhound, German Shorthaired Pointer, and extinct French hounds created exceptional intelligence.',
+    link: {
+      url: 'https://www.dailypaws.com/dogs-puppies/dog-breeds/weimaraner',
+      label: 'Learn more at Daily Paws',
+    },
   },
   {
     eyebrow: 'Lifestyle',
     title: 'Full-time companionship required',
     description: 'These "Velcro Dogs" demand 1-2 hours of daily exercise and constant human interaction to thrive.',
+    link: {
+      url: 'https://platopettreats.com/blogs/blog/the-velcro-athlete-coping-with-weimaraner-energy-and-separation-stress-a-real-life-guide-for-devoted-dog-parents',
+      label: 'Learn more at Plato Pet Treats',
+    },
   },
 ];
 
@@ -153,16 +165,28 @@ export const breedInfoVariants: SpotlightCard[] = [
     eyebrow: 'Coat Colors',
     title: 'Silver-Gray to Blue shades',
     description: 'Their stunning coat ranges from shimmering Silver-Gray of moonlight to deep Mouse-Gray and Blue hues, each variation equally captivating.',
+    link: {
+      url: 'https://a-z-animals.com/blog/weimaraner-colors-rarest-to-most-common/',
+      label: 'Learn more at A-Z Animals',
+    },
   },
   {
     eyebrow: 'Ridge Back',
     title: 'Mohawk ridge variation',
     description: 'Some Weimaraners sport a rebellious ridge down their spines, giving a playful nod to their distinctive personality and adding to their unique charm.',
+    link: {
+      url: 'https://canidae.com/blog/6-surprising-facts-about-a-dogs-cowlicks',
+      label: 'Learn more at Canidae',
+    },
   },
   {
     eyebrow: 'Tail Styles',
     title: 'Full or docked tails',
     description: 'Whether wagging a regal full tail or a traditional docked tail, each variation adds to the breed\'s timeless elegance and individual character.',
+    link: {
+      url: 'https://www.avma.org/resources-tools/animal-health-and-welfare/animal-welfare/tail-docking-dogs',
+      label: 'Learn more at AVMA',
+    },
   },
 ];
 
