@@ -12,6 +12,7 @@ WeimWisdom is a sleek, accessible, mobile-ready Next.js static site for Weimaran
 - 🐾 **Live Adoptable Pet Listings**: Integrated Petfinder widget displaying real-time adoptable Weimaraners from rescue partners
 - 🤝 **Rescue Partnerships**: Featured rescues with donation links, volunteer opportunities, and event calendars
 - 🔗 **External Resource Links**: 20+ curated external links to authoritative organizations (AKC, DockDogs, NASAR, etc.) with accessibility indicators
+- 🔍 **SEO Optimized**: Complete SEO infrastructure with robots.txt for crawl control and sitemap.xml for search engine discovery
 - ♿ **Fully Accessible**: WCAG compliant with comprehensive accessibility testing (100% pass rate), all external links include visual indicators
 - 📱 **Mobile-First Design**: Responsive typography and images optimized for all screen sizes
 - 🎨 **Modern UI**: Clean, professional design with Material-UI v7 components
@@ -72,6 +73,10 @@ src/
 │   └── globals.css
 └── theme/           # MUI theme configuration
     └── theme.ts
+public/              # Static assets
+├── robots.txt       # SEO crawl control
+├── sitemap.xml      # SEO sitemap with all URLs
+└── images/          # Image assets
 ```
 
 ## Run Locally
@@ -275,6 +280,20 @@ Blog posts are markdown files stored in `content/blog/` directory. Each post req
 - ✅ **Responsive Pagination Controls**: First/Last page buttons and mobile-optimized sizing
 - ✅ **Accessibility Improvements**: Updated rescue organization links with visible underlines for better accessibility
 - ✅ **Link Visibility**: Changed links from underline-on-hover to always-underlined with color-on-hover for WCAG compliance
+
+#### SEO Infrastructure
+- ✅ **robots.txt**: Created comprehensive robots.txt for crawl budget optimization
+  - Allows all main content pages (homepage, breed-info, activities, training, adoption, blog)
+  - Blocks Next.js build artifacts (`_next/`) and error pages (`404.html`)
+  - References sitemap.xml for automatic discovery
+- ✅ **sitemap.xml**: Generated complete XML sitemap with all 17 URLs
+  - Homepage priority: 1.0 (highest)
+  - Main pages priority: 0.8
+  - Blog listing priority: 0.7
+  - Blog posts priority: 0.6
+  - Configured with weimwisdom.com domain
+  - Includes lastmod dates and changefreq hints for search engines
+- ✅ **Search Engine Optimization**: Both files configured for Google Search Console and Bing Webmaster Tools submission
 
 #### New Blog Posts
 - ✅ **"Double Trouble: The Great Weimaraner Weight Loss Program"**: Personal narrative about 20K-step daily marathons with two high-energy Weimaraners (order: 11)
@@ -514,18 +533,78 @@ The `SpotlightGrid` component automatically:
 - Weim Friends Rescue (Cincinnati, OH)
 - Tarheel Weimaraner Rescue (NC/SC/VA)
 
+## SEO Infrastructure
+
+The site includes complete SEO optimization for search engine discovery and crawl efficiency.
+
+### robots.txt
+
+Configured to optimize crawl budget and control search engine access:
+
+```txt
+# WeimWisdom Robots.txt
+# Control search engine crawling for optimal SEO
+
+User-agent: *
+Allow: /
+Allow: /breed-info
+Allow: /activities
+Allow: /training
+Allow: /adoption
+Allow: /blog
+Allow: /blog/
+
+# Block Next.js build artifacts and error pages
+Disallow: /_next/
+Disallow: /404.html
+
+# Sitemap location
+Sitemap: https://www.weimwisdom.com/sitemap.xml
+```
+
+**Benefits:**
+- Directs search engines to important content first
+- Prevents indexing of technical assets (_next/) and error pages
+- Saves crawl budget by blocking unnecessary files
+- Automatically references sitemap for complete site discovery
+
+### sitemap.xml
+
+Comprehensive XML sitemap listing all 17 URLs with SEO metadata:
+
+**Structure:**
+- 1 homepage (priority: 1.0)
+- 5 main pages (priority: 0.8): Breed Info, Activities, Training, Adoption
+- 1 blog listing page (priority: 0.7)
+- 11 blog posts (priority: 0.6)
+
+**Update Frequency:**
+- Main pages & blog listing: `weekly` (updated regularly)
+- Blog posts: `monthly` (mostly static after publishing)
+
+**Implementation:**
+Both files are stored in `/public/` directory and automatically copied to production build root. After deployment, they're accessible at:
+- `https://www.weimwisdom.com/robots.txt`
+- `https://www.weimwisdom.com/sitemap.xml`
+
+**Search Engine Submission:**
+Submit sitemap URL to:
+- Google Search Console → Sitemaps section
+- Bing Webmaster Tools → Configure Site → Sitemaps
+
 ## Project Statistics
 
 - **Pages**: 6 main pages + blog listing + dynamic blog posts + 1 error page
 - **Blog Posts**: 11 published posts (welcome-to-weim-wisdom, the-gray-ghost-chronicles, divas-of-the-backyard, training-oops-or-wow, the-morning-the-farm-girl-flipped-the-script, losing-the-walkie-walkie-privileges, weimaraner-shadow-demon, three-years-with-tri-ceri-hops, the-art-of-the-deal, the-day-the-earth-stood-still, double-trouble-the-great-weimaraner-weight-loss-program-not-recommended)
 - **Components**: 9 reusable React components
 - **External Resource Links**: 20+ curated links to authoritative organizations
+- **SEO Files**: robots.txt (crawl control) + sitemap.xml (17 URLs with priorities)
 - **Rescue Partners**: 2 featured organizations (Weim Friends Rescue, Tarheel Weimaraner Rescue)
 - **Live Integrations**: Petfinder API widget for real-time adoptable pet listings
 - **Images**: 17+ optimized assets (including blog featured images)
 - **Tests**: 26 unit/integration + 3 E2E tests
 - **Test Coverage**: 100% pass rate on all accessibility and functionality tests
-- **Production Build**: Static HTML export with all pages, blog posts, assets, and Apache configuration
+- **Production Build**: Static HTML export with all pages, blog posts, assets, SEO files, and Apache configuration
 
 ## License
 
