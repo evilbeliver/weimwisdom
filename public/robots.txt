@@ -1,0 +1,18 @@
+# WeimWisdom Robots.txt
+# Control search engine crawling for optimal SEO
+
+User-agent: *
+Allow: /
+Allow: /breed-info
+Allow: /activities
+Allow: /training
+Allow: /adoption
+Allow: /blog
+Allow: /blog/
+
+# Block Next.js build artifacts and error pages
+Disallow: /_next/
+Disallow: /404.html
+
+# Sitemap location
+Sitemap: https://www.weimwisdom.com/sitemap.xml
