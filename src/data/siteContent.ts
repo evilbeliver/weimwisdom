@@ -188,26 +188,50 @@ export const activityIdeas: SpotlightCard[] = [
   {
     title: 'Trail adventures',
     description: 'Choose shaded hikes, portable water, and sniff breaks for safe endurance sessions.',
+    link: {
+      url: 'https://www.treelinereview.com/learn-skills/hiking-with-dogs',
+      label: 'Learn more at Treeline Review',
+    },
   },
   {
     title: 'Scent work',
     description: 'Nose-led games tap into instinct and provide satisfying mental fatigue on any weather day.',
+    link: {
+      url: 'https://bestfriends.org/pet-care-resources/dog-nose-work-scent-training-sport-dogs',
+      label: 'Learn more at Best Friends',
+    },
   },
   {
     title: 'Dock diving and retrieval',
     description: 'Water-safe retrieval and jumping sports give athletic dogs a joyful challenge.',
+    link: {
+      url: 'https://dockdogs.com/',
+      label: 'Learn more at DockDogs',
+    },
   },
   {
     title: 'Structured playdates',
     description: 'Well-matched dog friends and clear breaks help maintain confidence and social skills.',
+    link: {
+      url: 'https://www.akc.org/expert-advice/training/puppy-play-sessions/',
+      label: 'Learn more at AKC',
+    },
   },
   {
     title: 'Barn hunt',
     description: "A fast-growing, competitive dog sport that tests a dog's natural hunting instinct by having them locate safely housed rats in tubes hidden within a maze of straw or hay bales.",
+    link: {
+      url: 'https://www.barnhunt.com/index.html',
+      label: 'Learn more at Barn Hunt Association',
+    },
   },
   {
     title: 'Shed hunting',
     description: 'Dogs trained to locate dropped deer or elk antlers, making it an excellent, active off-season activity during late winter early spring.',
+    link: {
+      url: 'https://www.gameandfishmag.com/editorial/find-shed-antlers-with-dog/546489',
+      label: 'Learn more at Game & Fish',
+    },
   },
 ];
 
@@ -230,18 +254,32 @@ export const jobIdeas: SpotlightCard[] = [
   },
   {
     title: 'Therapy work',
-    description: 'The breed’s closeness with people can translate into calm, structured companionship work.',
-  },  {
+    description: 'The breed’s closeness with people can translate into calm, structured companionship work.',    link: {
+      url: 'https://www.akc.org/sports/title-recognition-program/therapy-dog-program/#:~:text=To%20earn%20an%20AKC%20Therapy,for%20which%20you%20are%20applying.',
+      label: 'Learn more at AKC',
+    },  },  {
     title: 'Search and Rescue (SAR)',
     description: 'SAR dogs are specialized working canines trained to locate missing people in wilderness, urban, or disaster settings using their superior sense of smell.',
+    link: {
+      url: 'https://nasar.org/page/K9SAR',
+      label: 'Learn more at NASAR',
+    },
   },
   {
     title: 'Field Trials',
     description: 'Elite, purpose-bred canine athletes trained to compete in simulated hunting scenarios that test their instinct, endurance, and obedience.',
+    link: {
+      url: 'https://www.westminsterkennelclub.org/field-trials/',
+      label: 'Learn more at Westminster Kennel Club',
+    },
   },
   {
     title: 'Detection Work',
     description: 'Weims with their superior sense of smell can be trained to identify, locate, and alert to specific target scents, ranging from explosives, drugs, and contraband to missing persons, endangered wildlife, and diseases.',
+    link: {
+      url: 'https://www.aaha.org/resources/2021-aaha-working-assistance-and-therapy-dog-guidelines/working-dogs-detection/',
+      label: 'Learn more at AAHA',
+    },
   },
 ];
 
