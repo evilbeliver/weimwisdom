@@ -1,4 +1,5 @@
-import { Box, Card, CardContent, Stack, Typography } from '@mui/material';
+import { Box, Card, CardContent, Link, Stack, Typography } from '@mui/material';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { SpotlightCard } from '@/data/siteContent';
 
 type SpotlightGridProps = {
@@ -34,6 +35,27 @@ export function SpotlightGrid({ items }: SpotlightGridProps) {
                 <Typography component="p" color="text.secondary">
                   {item.description}
                 </Typography>
+                {item.link && (
+                  <Link
+                    href={item.link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 0.5,
+                      mt: 1,
+                      fontWeight: 600,
+                      textDecoration: 'underline',
+                      '&:hover': {
+                        textDecoration: 'none',
+                      },
+                    }}
+                  >
+                    {item.link.label}
+                    <OpenInNewIcon sx={{ fontSize: 16 }} />
+                  </Link>
+                )}
               </Stack>
             </CardContent>
           </Card>

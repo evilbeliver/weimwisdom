@@ -7,6 +7,10 @@ export type SpotlightCard = {
   title: string;
   description: string;
   eyebrow?: string;
+  link?: {
+    url: string;
+    label: string;
+  };
 };
 
 export type ImageItem = {
@@ -211,10 +215,18 @@ export const jobIdeas: SpotlightCard[] = [
   {
     title: 'Running partner',
     description: 'Older, conditioned Weimaraners often love consistent jogging and canicross routines.',
+    link: {
+      url: 'https://canicrossusa.org/',
+      label: 'Learn more at Canicross USA',
+    },
   },
   {
     title: 'Hunt and field work',
     description: 'Highly athletic, intelligent, and driven dogs, with specialized skills for upland birds, waterfowl, or small game tracking.',
+    link: {
+      url: 'https://www.akc.org/expert-advice/training/tips-for-hunting-with-your-dog/',
+      label: 'Learn more at AKC',
+    },
   },
   {
     title: 'Therapy work',
