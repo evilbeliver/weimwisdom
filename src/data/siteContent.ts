@@ -137,6 +137,10 @@ export const breedInfoCare: SpotlightCard[] = [
     eyebrow: 'Health',
     title: 'Bloat and deep chest concerns',
     description: 'Their deep chests make them highly susceptible to life-threatening bloat (gastric torsion) requiring immediate veterinary attention.',
+    link: {
+      url: 'https://www.petmd.com/dog/conditions/digestive/bloat-in-dogs',
+      label: 'Learn more at PetMD',
+    },
   },
   {
     eyebrow: 'Exercise',
