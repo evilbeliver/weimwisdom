@@ -1,4 +1,5 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Link, Typography } from '@mui/material';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import Script from 'next/script';
 import { PageHero } from '@/components/PageHero';
 import { SectionBlock } from '@/components/SectionBlock';
@@ -36,31 +37,84 @@ export default function AdoptionPage() {
         <Box component="ul" sx={{ pl: 3, mb: 3 }}>
           <Box component="li" sx={{ mb: 2 }}>
             <Typography component="span" variant="body1" color="text.primary">
-              <Typography component="a" href="https://weimfriends.com/" target="_blank" rel="noopener noreferrer" sx={{ color: 'primary.main', textDecoration: 'underline', fontWeight: 600, '&:hover': { color: 'primary.dark' } }}>
+              <Link
+                href="https://weimfriends.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  color: 'primary.main',
+                  textDecoration: 'underline',
+                  fontWeight: 600,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 0.5,
+                  '&:hover': { color: 'primary.dark' },
+                }}
+              >
                 Weim Friends Rescue
-              </Typography>
+                <OpenInNewIcon sx={{ fontSize: 16 }} />
+              </Link>
               {' – Based in Cincinnati, Ohio, they are amazing at finding forever homes for Gray Ghosts in the Midwest.'}
             </Typography>
             <Box component="ul" sx={{ pl: 3, mt: 1 }}>
               <Box component="li" sx={{ mb: 1 }}>
                 <Typography variant="body2" color="text.primary">
                   <strong>Get Involved:</strong> You can support them through Kroger Community Rewards, volunteering at the Cincinnati Flying Pig Marathon, or attending{' '}
-                  <Typography component="a" href="https://weimfriends.com/events/" target="_blank" rel="noopener noreferrer" sx={{ color: 'primary.main', textDecoration: 'underline', '&:hover': { color: 'primary.dark' } }}>
+                  <Link
+                    href="https://weimfriends.com/events/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: 'primary.main',
+                      textDecoration: 'underline',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 0.5,
+                      '&:hover': { color: 'primary.dark' },
+                    }}
+                  >
                     local events
-                  </Typography>
+                    <OpenInNewIcon sx={{ fontSize: 14 }} />
+                  </Link>
                   {' like the My Furry Valentine adoption event and their annual Reunion at WagsPark.'}
                 </Typography>
               </Box>
               <Box component="li">
                 <Typography variant="body2" color="text.primary">
                   <strong>How to Help:</strong> They are always in need of{' '}
-                  <Typography component="a" href="https://weimfriends.com/volunteer/" target="_blank" rel="noopener noreferrer" sx={{ color: 'primary.main', textDecoration: 'underline', '&:hover': { color: 'primary.dark' } }}>
+                  <Link
+                    href="https://weimfriends.com/volunteer/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: 'primary.main',
+                      textDecoration: 'underline',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 0.5,
+                      '&:hover': { color: 'primary.dark' },
+                    }}
+                  >
                     volunteers
-                  </Typography>
+                    <OpenInNewIcon sx={{ fontSize: 14 }} />
+                  </Link>
                   {' for transport and home visits, as well as '}
-                  <Typography component="a" href="https://weimfriends.com/support/" target="_blank" rel="noopener noreferrer" sx={{ color: 'primary.main', textDecoration: 'underline', '&:hover': { color: 'primary.dark' } }}>
+                  <Link
+                    href="https://weimfriends.com/support/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: 'primary.main',
+                      textDecoration: 'underline',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 0.5,
+                      '&:hover': { color: 'primary.dark' },
+                    }}
+                  >
                     donations
-                  </Typography>
+                    <OpenInNewIcon sx={{ fontSize: 14 }} />
+                  </Link>
                   {' to cover medical care and rehabilitation.'}
                 </Typography>
               </Box>
@@ -69,27 +123,67 @@ export default function AdoptionPage() {
           
           <Box component="li" sx={{ mb: 2 }}>
             <Typography component="span" variant="body1" color="text.primary">
-              <Typography component="a" href="https://www.tarheelweimrescue.org/" target="_blank" rel="noopener noreferrer" sx={{ color: 'primary.main', textDecoration: 'underline', fontWeight: 600, '&:hover': { color: 'primary.dark' } }}>
+              <Link
+                href="https://www.tarheelweimrescue.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  color: 'primary.main',
+                  textDecoration: 'underline',
+                  fontWeight: 600,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 0.5,
+                  '&:hover': { color: 'primary.dark' },
+                }}
+              >
                 Tarheel Weimaraner Rescue
-              </Typography>
+                <OpenInNewIcon sx={{ fontSize: 16 }} />
+              </Link>
               {' – Operating across North Carolina, South Carolina, and Virginia, this volunteer-run team specializes in giving Weims a fresh start through their dedicated foster network.'}
             </Typography>
             <Box component="ul" sx={{ pl: 3, mt: 1 }}>
               <Box component="li" sx={{ mb: 1 }}>
                 <Typography variant="body2" color="text.primary">
                   <strong>Get Involved:</strong> Check their site and social media for regional activities like the nationwide Walk for Weims virtual event or how to{' '}
-                  <Typography component="a" href="https://www.tarheelweimrescue.org/copy-of-donate-pp" target="_blank" rel="noopener noreferrer" sx={{ color: 'primary.main', textDecoration: 'underline', '&:hover': { color: 'primary.dark' } }}>
+                  <Link
+                    href="https://www.tarheelweimrescue.org/copy-of-donate-pp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: 'primary.main',
+                      textDecoration: 'underline',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 0.5,
+                      '&:hover': { color: 'primary.dark' },
+                    }}
+                  >
                     donate
-                  </Typography>
+                    <OpenInNewIcon sx={{ fontSize: 14 }} />
+                  </Link>
                   .
                 </Typography>
               </Box>
               <Box component="li">
                 <Typography variant="body2" color="text.primary">
                   <strong>How to Help:</strong> As a 501(c)(3) nonprofit, tax-deductible donations are critical for vet expenses and long-term care. They are actively seeking{' '}
-                  <Typography component="a" href="https://www.tarheelweimrescue.org/volunteer" target="_blank" rel="noopener noreferrer" sx={{ color: 'primary.main', textDecoration: 'underline', '&:hover': { color: 'primary.dark' } }}>
+                  <Link
+                    href="https://www.tarheelweimrescue.org/volunteer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: 'primary.main',
+                      textDecoration: 'underline',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 0.5,
+                      '&:hover': { color: 'primary.dark' },
+                    }}
+                  >
                     volunteers
-                  </Typography>
+                    <OpenInNewIcon sx={{ fontSize: 14 }} />
+                  </Link>
                   {' for fostering, transport (dog taxis), and administrative support across the Southeast.'}
                 </Typography>
               </Box>
