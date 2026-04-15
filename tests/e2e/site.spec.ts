@@ -22,3 +22,20 @@ test('secondary content pages render', async ({ page }) => {
   await page.goto('/blog');
   await expect(page.getByRole('heading', { name: /weimwisdom blog/i })).toBeVisible();
 });
+
+test('external resource links open in new tabs', async ({ page }) => {
+  await page.goto('/activities');
+  
+  // Wait for page to fully load
+  await page.waitForLoadState('networkidle');
+
+  // Verify external links have target="_blank" and visual indicators
+  const externalLinks = page.getByRole('link').filter({ hasText: 'Learn more at' });
+  const count = await externalLinks.count();
+  expect(count).toBeGreaterThan(0);
+
+  // Check first external link has correct attributes
+  const firstLink = externalLinks.first();
+  await expect(firstLink).toHaveAttribute('target', '_blank');
+  await expect(firstLink).toHaveAttribute('rel', 'noopener noreferrer');
+});

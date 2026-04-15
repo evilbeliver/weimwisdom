@@ -8,10 +8,11 @@ WeimWisdom is a sleek, accessible, mobile-ready Next.js static site for Weimaran
 - 🎓 **Training Resources**: Professional training tips and YouTube community
 - 🏃 **Activities**: Exercise recommendations and purpose-driven work ideas for high-energy Weimaraners
 - 👪 **Adoption Guidance**: Complete adoption process, preparation guides, rescue resources, and live Petfinder integration
-- 📝 **Blog Platform**: Markdown-based blog with featured images, custom ordering, and dynamic routing (8 published posts)
+- 📝 **Blog Platform**: Markdown-based blog with featured images, custom ordering, and dynamic routing (11 published posts)
 - 🐾 **Live Adoptable Pet Listings**: Integrated Petfinder widget displaying real-time adoptable Weimaraners from rescue partners
 - 🤝 **Rescue Partnerships**: Featured rescues with donation links, volunteer opportunities, and event calendars
-- ♿ **Fully Accessible**: WCAG compliant with comprehensive accessibility testing (100% pass rate)
+- 🔗 **External Resource Links**: 20+ curated external links to authoritative organizations (AKC, DockDogs, NASAR, etc.) with accessibility indicators
+- ♿ **Fully Accessible**: WCAG compliant with comprehensive accessibility testing (100% pass rate), all external links include visual indicators
 - 📱 **Mobile-First Design**: Responsive typography and images optimized for all screen sizes
 - 🎨 **Modern UI**: Clean, professional design with Material-UI v7 components
 - 🔒 **HTTPS Ready**: Automatic SSL redirect configured via .htaccess
@@ -253,7 +254,19 @@ Blog posts are markdown files stored in `content/blog/` directory. Each post req
 
 
 
-### April 2026 - New Blog Content & Production Testing
+### April 2026 - External Resource Links & Enhanced Accessibility
+
+#### External Resource Integration
+- ✅ **SpotlightCard Link Field**: Extended type definition with optional `link: {url, label}` field for external resources
+- ✅ **20+ External Links Added**: Curated links to authoritative organizations across Activities, Jobs, and Breed Info pages
+  - Activities: Trail adventures (Treeline Review), Scent work (Best Friends), Dock diving (DockDogs), Structured playdates (AKC), Barn hunt (Barn Hunt Association), Shed hunting (Game & Fish)
+  - Jobs: Running partner (Canicross USA), Hunt and field work (AKC), Therapy work (AKC), SAR (NASAR), Field Trials (Westminster), Detection Work (AAHA)
+  - Breed Info: Hunting companion (WCA), Human brain (Daily Paws), Companionship (Plato Pet Treats), Color variants (A-Z Animals), Mohawk ridge (Canidae), Tail docking (AVMA), Bloat concerns (PetMD)
+- ✅ **Reusable Link Pattern**: SpotlightGrid component conditionally renders external links with consistent styling
+- ✅ **External Link Icons**: All external links display OpenInNewIcon (Material-UI) for accessibility compliance
+- ✅ **Security Attributes**: All external links include `target="_blank"` and `rel="noopener noreferrer"`
+- ✅ **Adoption Page Links**: Updated 7 rescue organization links with visual external indicators
+- ✅ **Link Styling**: Underlined text with inline-flex layout and 0.5 gap spacing for icon
 
 #### Blog Platform Enhancements
 - ✅ **Pagination System**: Implemented Material-UI pagination with 6 posts per page for scalable blog growth
@@ -264,15 +277,19 @@ Blog posts are markdown files stored in `content/blog/` directory. Each post req
 - ✅ **Link Visibility**: Changed links from underline-on-hover to always-underlined with color-on-hover for WCAG compliance
 
 #### New Blog Posts
+- ✅ **"Double Trouble: The Great Weimaraner Weight Loss Program"**: Personal narrative about 20K-step daily marathons with two high-energy Weimaraners (order: 11)
 - ✅ **"From 3 Months to 3 Years: Our Resident Tri-Ceri-Hops"**: Heartwarming cancer survival story about Loki's journey from diagnosis through three years post-amputation
 - ✅ **"The Weimaraner Shadow Demon"**: Added as 7th blog post in the collection
-- ✅ **8 Published Blog Posts**: Expanded collection with personal stories of resilience, training, and breed experiences
+- ✅ **11 Published Blog Posts**: Expanded collection with personal stories of resilience, training, and breed experiences
 
 #### Testing & Quality Assurance
+- ✅ **SpotlightGrid Tests**: Added unit tests for external link rendering, attributes, and accessibility icon display
+- ✅ **Adoption Page Tests**: Verified rescue organization links have external indicators and security attributes
+- ✅ **E2E External Link Tests**: Playwright tests confirm external links open in new tabs with correct attributes
 - ✅ **Blog Page Tests**: Added comprehensive unit, integration, and accessibility tests for blog pagination
 - ✅ **Pagination Tests**: Verified 6-post-per-page display and navigation controls
-- ✅ **E2E Coverage**: Extended Playwright tests to include blog page validation
-- ✅ **Test Suite**: 18 Jest tests (6 suites) + 2 Playwright E2E tests with 100% pass rate
+- ✅ **E2E Coverage**: Extended Playwright tests to include blog page validation and external link verification
+- ✅ **Test Suite**: 26 Jest tests (5 suites) + 3 Playwright E2E tests with 100% pass rate
 
 #### Production Build & Testing
 - ✅ **Static Server Testing**: Validated production builds using Python's http.server for pre-deployment testing
@@ -354,7 +371,7 @@ image: "/images/weim-logo.png"
 - ✅ **SiteGround Ready**: Production build fully configured for Apache hosting
 
 #### Testing & Validation
-- ✅ **All Tests Passing**: 18 Jest tests (6 suites) + 2 Playwright E2E tests with 100% pass rate
+- ✅ **All Tests Passing**: 26 Jest tests (5 suites) + 3 Playwright E2E tests with 100% pass rate
 - ✅ **Accessibility**: jest-axe validation confirms WCAG compliance across all pages including blog
 - ✅ **Local Server Testing**: Verified production build with static server on localhost:3000
 - ✅ **Pagination Testing**: Validated blog pagination behavior and accessibility
@@ -426,15 +443,87 @@ Example:
 </Typography>
 ```
 
+## External Resource Links
+
+The site features 20+ curated external links to authoritative organizations, providing users with additional resources for activities, jobs, and breed information.
+
+### Implementation
+
+External links are defined in the `SpotlightCard` type:
+
+```typescript
+export type SpotlightCard = {
+  title: string;
+  description: string;
+  eyebrow?: string;
+  link?: {
+    url: string;
+    label: string;
+  };
+};
+```
+
+### Adding External Links
+
+To add an external link to a card, update the card object in `/src/data/siteContent.ts`:
+
+```typescript
+{
+  eyebrow: 'Activity',
+  title: 'Dock Diving',
+  description: 'Channel that athletic drive into competitive dock diving events.',
+  link: {
+    url: 'https://www.dockdogs.com',
+    label: 'Explore DockDogs',
+  },
+}
+```
+
+The `SpotlightGrid` component automatically:
+- Renders the link with Material-UI `Link` component
+- Adds `OpenInNewIcon` for visual accessibility
+- Includes `target="_blank"` and `rel="noopener noreferrer"` for security
+- Applies consistent styling (underline, fontWeight: 600, inline-flex with 0.5 gap)
+
+### Featured External Organizations
+
+**Activities:**
+- Treeline Review (trail adventures)
+- Best Friends Animal Society (scent work)
+- DockDogs (dock diving)
+- AKC (structured playdates)
+- Barn Hunt Association (barn hunts)
+- Game & Fish (shed hunting)
+
+**Jobs:**
+- Canicross USA (running partner)
+- AKC (hunt/field work, therapy work)
+- NASAR (search and rescue)
+- Westminster (field trials)
+- AAHA (detection work)
+
+**Breed Info:**
+- Weimaraner Club of America (breed history)
+- Daily Paws, Plato Pet Treats (temperament)
+- A-Z Animals (color variants)
+- Canidae (coat characteristics)
+- AVMA (tail docking)
+- PetMD (bloat health concerns)
+
+**Adoption:**
+- Weim Friends Rescue (Cincinnati, OH)
+- Tarheel Weimaraner Rescue (NC/SC/VA)
+
 ## Project Statistics
 
 - **Pages**: 6 main pages + blog listing + dynamic blog posts + 1 error page
-- **Blog Posts**: 8 published posts (welcome-to-weim-wisdom, the-gray-ghost-chronicles, divas-of-the-backyard, training-oops-or-wow, the-morning-the-farm-girl-flipped-the-script, losing-the-walkie-walkie-privileges, weimaraner-shadow-demon, three-years-with-tri-ceri-hops)
+- **Blog Posts**: 11 published posts (welcome-to-weim-wisdom, the-gray-ghost-chronicles, divas-of-the-backyard, training-oops-or-wow, the-morning-the-farm-girl-flipped-the-script, losing-the-walkie-walkie-privileges, weimaraner-shadow-demon, three-years-with-tri-ceri-hops, the-art-of-the-deal, the-day-the-earth-stood-still, double-trouble-the-great-weimaraner-weight-loss-program-not-recommended)
 - **Components**: 9 reusable React components
+- **External Resource Links**: 20+ curated links to authoritative organizations
 - **Rescue Partners**: 2 featured organizations (Weim Friends Rescue, Tarheel Weimaraner Rescue)
 - **Live Integrations**: Petfinder API widget for real-time adoptable pet listings
 - **Images**: 17+ optimized assets (including blog featured images)
-- **Tests**: 18 unit/integration + 2 E2E tests
+- **Tests**: 26 unit/integration + 3 E2E tests
 - **Test Coverage**: 100% pass rate on all accessibility and functionality tests
 - **Production Build**: Static HTML export with all pages, blog posts, assets, and Apache configuration
 

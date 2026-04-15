@@ -32,6 +32,22 @@ describe('adoption page integration', () => {
     expect(screen.getByRole('heading', { name: /adoption and readiness guidance/i })).toBeInTheDocument();
     expect(screen.getAllByRole('link', { name: 'Training' })[0]).toHaveAttribute('href', '/training');
   });
+
+  it('renders rescue organization links with external indicators', () => {
+    renderWithProviders(<AdoptionPage />);
+
+    // Verify Weim Friends Rescue links have external indicators
+    const weimFriendsLink = screen.getByRole('link', { name: /weim friends rescue/i });
+    expect(weimFriendsLink).toHaveAttribute('target', '_blank');
+    expect(weimFriendsLink).toHaveAttribute('rel', 'noopener noreferrer');
+    expect(weimFriendsLink.querySelector('svg')).toBeInTheDocument();
+
+    // Verify Tarheel rescue links have external indicators
+    const tarheelLink = screen.getByRole('link', { name: /tarheel weimaraner rescue/i });
+    expect(tarheelLink).toHaveAttribute('target', '_blank');
+    expect(tarheelLink).toHaveAttribute('rel', 'noopener noreferrer');
+    expect(tarheelLink.querySelector('svg')).toBeInTheDocument();
+  });
 });
 
 describe('blog page integration', () => {
