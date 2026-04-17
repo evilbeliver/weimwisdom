@@ -189,6 +189,144 @@ export default function AdoptionPage() {
               </Box>
             </Box>
           </Box>
+          
+          <Box component="li" sx={{ mb: 2 }}>
+            <Typography component="span" variant="body1" color="text.primary">
+              <Link
+                href="https://www.weimrescue.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  color: 'primary.main',
+                  textDecoration: 'underline',
+                  fontWeight: 600,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 0.5,
+                  '&:hover': { color: 'primary.dark' },
+                }}
+              >
+                Weimaraner Rescue of the South
+                <OpenInNewIcon sx={{ fontSize: 16 }} />
+              </Link>
+              {' – Serving the Southern United States, this dedicated team works tirelessly to rescue, rehabilitate, and rehome Weimaraners who need a second chance at their forever home.'}
+            </Typography>
+            <Box component="ul" sx={{ pl: 3, mt: 1 }}>
+              <Box component="li" sx={{ mb: 1 }}>
+                <Typography variant="body2" color="text.primary">
+                  <strong>Get Involved:</strong> Support their mission by{' '}
+                  <Link
+                    href="https://www.weimrescue.com/volunteerhere-wrs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: 'primary.main',
+                      textDecoration: 'underline',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 0.5,
+                      '&:hover': { color: 'primary.dark' },
+                    }}
+                  >
+                    volunteering
+                    <OpenInNewIcon sx={{ fontSize: 14 }} />
+                  </Link>
+                  {' to help with foster care, transport, and home visits across the region.'}
+                </Typography>
+              </Box>
+              <Box component="li">
+                <Typography variant="body2" color="text.primary">
+                  <strong>How to Help:</strong> Your{' '}
+                  <Link
+                    href="https://www.weimrescue.com/donations-wrs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: 'primary.main',
+                      textDecoration: 'underline',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 0.5,
+                      '&:hover': { color: 'primary.dark' },
+                    }}
+                  >
+                    donations
+                    <OpenInNewIcon sx={{ fontSize: 14 }} />
+                  </Link>
+                  {' directly support medical care, rehabilitation, and the daily needs of Weims waiting for their new families.'}
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+          
+          <Box component="li" sx={{ mb: 2 }}>
+            <Typography component="span" variant="body1" color="text.primary">
+              <Link
+                href="https://www.louisvilleweimrescue.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  color: 'primary.main',
+                  textDecoration: 'underline',
+                  fontWeight: 600,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 0.5,
+                  '&:hover': { color: 'primary.dark' },
+                }}
+              >
+                Louisville Weimaraner Rescue
+                <OpenInNewIcon sx={{ fontSize: 16 }} />
+              </Link>
+              {' – Based in Kentucky, this compassionate organization focuses on rescuing and placing Weimaraners throughout the region, ensuring each Gray Ghost finds the perfect match with a loving family.'}
+            </Typography>
+            <Box component="ul" sx={{ pl: 3, mt: 1 }}>
+              <Box component="li" sx={{ mb: 1 }}>
+                <Typography variant="body2" color="text.primary">
+                  <strong>Get Involved:</strong> Join their mission by{' '}
+                  <Link
+                    href="https://www.louisvilleweimrescue.com/volunteer/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: 'primary.main',
+                      textDecoration: 'underline',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 0.5,
+                      '&:hover': { color: 'primary.dark' },
+                    }}
+                  >
+                    volunteering
+                    <OpenInNewIcon sx={{ fontSize: 14 }} />
+                  </Link>
+                  {' for fostering, events, or transportation to help these dogs on their journey to new homes.'}
+                </Typography>
+              </Box>
+              <Box component="li">
+                <Typography variant="body2" color="text.primary">
+                  <strong>How to Help:</strong> Consider making a{' '}
+                  <Link
+                    href="https://www.louisvilleweimrescue.com/lwr-donation/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: 'primary.main',
+                      textDecoration: 'underline',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 0.5,
+                      '&:hover': { color: 'primary.dark' },
+                    }}
+                  >
+                    donation
+                    <OpenInNewIcon sx={{ fontSize: 14 }} />
+                  </Link>
+                  {' to support veterinary care, training, and the foster network that keeps their rescue operations running.'}
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
         </Box>
 
         <Typography component="p" variant="body1" color="text.primary" sx={{ mb: 2, fontWeight: 600 }}>
