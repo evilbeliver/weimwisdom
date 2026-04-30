@@ -1,4 +1,5 @@
-import { Alert, Box, Button, Container, Grid, Stack, Typography } from '@mui/material';
+import { Alert, Box, Button, Container, Stack, Typography } from '@mui/material';
+import Grid from '@mui/material/GridLegacy';
 import Link from 'next/link';
 import { GalleryGrid } from '@/components/GalleryGrid';
 import { HeroSection } from '@/components/HeroSection';
@@ -52,7 +53,7 @@ export default function HomePage() {
       <Box sx={{ py: { xs: 4, sm: 6, md: 10 } }}>
         <Container maxWidth="lg">
           <Grid container spacing={3}>
-            <Grid size={{ xs: 12, md: 8 }}>
+            <Grid item xs={12} md={8}>
               <Stack spacing={2.5}>
                 <Typography variant="h2" sx={{ fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' } }}>Continue at your own Risk</Typography>
                 <Typography color="text.secondary" sx={{ fontSize: { xs: '1rem', sm: '1rem', md: '1.125rem' } }}>
@@ -68,7 +69,7 @@ export default function HomePage() {
                 </Stack>
               </Stack>
             </Grid>
-            <Grid size={{ xs: 12, md: 4 }}>
+            <Grid item xs={12} md={4}>
               <ResponsiveImage 
                 src="/images/weim-beware.jpg" 
                 alt="Weimaraner warning sign"

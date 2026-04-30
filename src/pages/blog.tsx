@@ -10,9 +10,9 @@ import {
   CardContent,
   CardActionArea,
   CardMedia,
-  Grid,
   Pagination,
 } from '@mui/material';
+import Grid from '@mui/material/GridLegacy';
 import { SiteLayout } from '@/components/SiteLayout';
 import { PageHero } from '@/components/PageHero';
 import type { BlogPostMeta } from '@/lib/blog';
@@ -86,7 +86,7 @@ export default function BlogPage({ posts }: BlogPageProps) {
             <>
               <Grid container spacing={4}>
                 {currentPosts.map((post) => (
-                  <Grid size={{ xs: 12, md: 6 }} key={post.slug}>
+                  <Grid item xs={12} md={6} key={post.slug}>
                     <Card
                       sx={{
                         height: '100%',
