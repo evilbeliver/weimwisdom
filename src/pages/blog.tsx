@@ -39,16 +39,28 @@ export default function BlogPage({ posts }: BlogPageProps) {
   const router = useRouter();
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Get page from URL query parameter
+  // Get page from URL hash on mount and when hash changes
   useEffect(() => {
-    const pageParam = router.query.page;
-    if (pageParam) {
-      const pageNum = parseInt(pageParam as string, 10);
-      if (!isNaN(pageNum) && pageNum > 0) {
-        setCurrentPage(pageNum);
+    const updatePageFromHash = () => {
+      const hash = window.location.hash;
+      const match = hash.match(/^#page=(\d+)$/);
+      if (match) {
+        const pageNum = parseInt(match[1], 10);
+        if (!isNaN(pageNum) && pageNum > 0) {
+          setCurrentPage(pageNum);
+        }
+      } else {
+        setCurrentPage(1);
       }
-    }
-  }, [router.query.page]);
+    };
+
+    // Set initial page from hash
+    updatePageFromHash();
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', updatePageFromHash);
+    return () => window.removeEventListener('hashchange', updatePageFromHash);
+  }, []);
 
   const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
 
@@ -59,8 +71,8 @@ export default function BlogPage({ posts }: BlogPageProps) {
 
   const handlePageChange = (_event: React.ChangeEvent<unknown>, value: number) => {
     setCurrentPage(value);
-    // Update URL without page reload
-    router.push(`/blog?page=${value}`, undefined, { shallow: true });
+    // Update URL hash (works in static exports)
+    window.location.hash = `page=${value}`;
     // Scroll to top of page
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
