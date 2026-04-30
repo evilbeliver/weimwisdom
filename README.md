@@ -8,7 +8,7 @@ WeimWisdom is a sleek, accessible, mobile-ready Next.js static site for Weimaran
 - 🎓 **Training Resources**: Professional training tips and YouTube community
 - 🏃 **Activities**: Exercise recommendations and purpose-driven work ideas for high-energy Weimaraners
 - 👪 **Adoption Guidance**: Complete adoption process, preparation guides, rescue resources, and live Petfinder integration
-- 📝 **Blog Platform**: Markdown-based blog with featured images, custom ordering, and dynamic routing (11 published posts)
+- 📝 **Blog Platform**: Markdown-based blog with featured images, custom ordering, pagination (6 posts per page), and dynamic routing (14 published posts)
 - 🐾 **Live Adoptable Pet Listings**: Integrated Petfinder widget displaying real-time adoptable Weimaraners from rescue partners
 - 🤝 **Rescue Partnerships**: Featured rescues with donation links, volunteer opportunities, and event calendars
 - 🔗 **External Resource Links**: 20+ curated external links to authoritative organizations (AKC, DockDogs, NASAR, etc.) with accessibility indicators
@@ -34,7 +34,7 @@ WeimWisdom is a sleek, accessible, mobile-ready Next.js static site for Weimaran
 
 ```
 content/
-└── blog/            # Markdown blog posts
+└── blog/            # Markdown blog posts (14 posts)
     ├── welcome-to-weim-wisdom.md
     ├── the-gray-ghost-chronicles.md
     ├── divas-of-the-backyard.md
@@ -42,7 +42,13 @@ content/
     ├── the-morning-the-farm-girl-flipped-the-script.md
     ├── losing-the-walkie-walkie-privileges.md
     ├── weimaraner-shadow-demon.md
-    └── three-years-with-tri-ceri-hops.md
+    ├── three-years-with-tri-ceri-hops.md
+    ├── the-art-of-the-deal.md
+    ├── the-day-the-earth-stood-still.md
+    ├── double-trouble-the-great-weimaraner-weight-loss-program-not-recommended.md
+    ├── the-puck-drops-and-so-does-the-kibble.md
+    ├── rough-rough-day-for-paige.md
+    └── the-badge-of-honor-navigating-the-lumpy-bumpy-years.md
 src/
 ├── components/      # Reusable UI components
 │   ├── GalleryGrid.tsx
@@ -135,7 +141,8 @@ This command:
 **Output includes:**
 - 6 main HTML pages (index, breed-info, training, activities, adoption, blog)
 - 404 error page
-- 8 dynamic blog post pages (generated from markdown files in content/blog/)
+- 14 dynamic blog post pages (generated from markdown files in content/blog/)
+- Client-side pagination with hash-based navigation (works in static exports)
 - Petfinder widget integration for live adoptable pet listings
 - Optimized static assets in `_next/` directory
 - Image assets in `images/` folder
@@ -147,6 +154,15 @@ The build automatically creates `.htaccess` with:
 - **HTTPS Redirect**: Forces all traffic to use SSL
 - **URL Rewriting**: Serves `.html` files without the extension (e.g., `/breed-info` serves `breed-info.html`)
 - **404 Handling**: Redirects missing pages to custom 404.html
+
+### Blog Pagination
+
+The blog page uses hash-based navigation for pagination (e.g., `blog.html#page=2`) to work correctly with static exports:
+- Displays 6 posts per page
+- Hash-based navigation works client-side without server routing
+- Browser back/forward buttons work correctly
+- Page links can be shared and bookmarked
+- Compatible with both development server and production static builds
 
 **Example rules:**
 ```apache
