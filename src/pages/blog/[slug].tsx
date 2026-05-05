@@ -3,6 +3,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Box, Container, Typography, Breadcrumbs } from '@mui/material';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { SiteLayout } from '@/components/SiteLayout';
@@ -23,6 +24,28 @@ function formatDate(dateString: string): string {
     day: 'numeric',
   });
 }
+
+// Custom link component for ReactMarkdown
+const MarkdownLink = ({ href, children, ...props }: any) => {
+  const isExternal = href?.startsWith('http://') || href?.startsWith('https://');
+  
+  if (isExternal) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}
+        {...props}
+      >
+        {children}
+        <OpenInNewIcon sx={{ fontSize: 16, verticalAlign: 'middle' }} />
+      </a>
+    );
+  }
+  
+  return <a href={href} {...props}>{children}</a>;
+};
 
 export default function BlogPostPage({ post }: BlogPostPageProps) {
   return (
@@ -174,7 +197,12 @@ export default function BlogPostPage({ post }: BlogPostPageProps) {
               },
             }}
           >
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            <ReactMarkdown 
+              remarkPlugins={[remarkGfm]}
+              components={{
+                a: MarkdownLink,
+              }}
+            >
               {post.content}
             </ReactMarkdown>
           </Box>
