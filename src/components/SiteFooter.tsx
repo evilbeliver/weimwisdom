@@ -1,6 +1,7 @@
 import { Box, Container, Link as MuiLink, Stack, Typography, IconButton } from '@mui/material';
 import Link from 'next/link';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import { navLinks } from '@/data/siteContent';
 
 export function SiteFooter() {
@@ -10,6 +11,12 @@ export function SiteFooter() {
       url: 'https://www.facebook.com/profile.php?id=61574378210667',
       icon: FacebookIcon,
       ariaLabel: 'Visit WeimWisdom on Facebook',
+    },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/weimwisdom/',
+      icon: InstagramIcon,
+      ariaLabel: 'Visit WeimWisdom on Instagram',
     },
   ];
 
